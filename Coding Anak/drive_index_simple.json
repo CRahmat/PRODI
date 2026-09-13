@@ -1,0 +1,922 @@
+{
+  "generated_at": "2026-09-12T21:09:05.644716",
+  "root_folder_name": "CODING ANAK",
+  "total_items": 130,
+  "summary_by_category": {
+    "folder": 25,
+    "pdf": 96,
+    "image": 9
+  },
+  "items": [
+    {
+      "name": "4. SPECIAL BONUS",
+      "path": "CODING ANAK/4. SPECIAL BONUS",
+      "is_folder": true,
+      "extension": null,
+      "category": "folder"
+    },
+    {
+      "name": "4. CROSSWORD",
+      "path": "CODING ANAK/4. SPECIAL BONUS/4. CROSSWORD",
+      "is_folder": true,
+      "extension": null,
+      "category": "folder"
+    },
+    {
+      "name": "Crosswords 4.pdf",
+      "path": "CODING ANAK/4. SPECIAL BONUS/4. CROSSWORD/Crosswords 4.pdf",
+      "is_folder": false,
+      "extension": "pdf",
+      "category": "pdf"
+    },
+    {
+      "name": "Crosswords 5.pdf",
+      "path": "CODING ANAK/4. SPECIAL BONUS/4. CROSSWORD/Crosswords 5.pdf",
+      "is_folder": false,
+      "extension": "pdf",
+      "category": "pdf"
+    },
+    {
+      "name": "Crosswords 2.pdf",
+      "path": "CODING ANAK/4. SPECIAL BONUS/4. CROSSWORD/Crosswords 2.pdf",
+      "is_folder": false,
+      "extension": "pdf",
+      "category": "pdf"
+    },
+    {
+      "name": "Crosswords 3.pdf",
+      "path": "CODING ANAK/4. SPECIAL BONUS/4. CROSSWORD/Crosswords 3.pdf",
+      "is_folder": false,
+      "extension": "pdf",
+      "category": "pdf"
+    },
+    {
+      "name": "Crosswords 1.pdf",
+      "path": "CODING ANAK/4. SPECIAL BONUS/4. CROSSWORD/Crosswords 1.pdf",
+      "is_folder": false,
+      "extension": "pdf",
+      "category": "pdf"
+    },
+    {
+      "name": "3. MAZE",
+      "path": "CODING ANAK/4. SPECIAL BONUS/3. MAZE",
+      "is_folder": true,
+      "extension": null,
+      "category": "folder"
+    },
+    {
+      "name": "Leveling Maze",
+      "path": "CODING ANAK/4. SPECIAL BONUS/3. MAZE/Leveling Maze",
+      "is_folder": true,
+      "extension": null,
+      "category": "folder"
+    },
+    {
+      "name": "Difficult.pdf",
+      "path": "CODING ANAK/4. SPECIAL BONUS/3. MAZE/Leveling Maze/Difficult.pdf",
+      "is_folder": false,
+      "extension": "pdf",
+      "category": "pdf"
+    },
+    {
+      "name": "Easy.pdf",
+      "path": "CODING ANAK/4. SPECIAL BONUS/3. MAZE/Leveling Maze/Easy.pdf",
+      "is_folder": false,
+      "extension": "pdf",
+      "category": "pdf"
+    },
+    {
+      "name": "Hard.pdf",
+      "path": "CODING ANAK/4. SPECIAL BONUS/3. MAZE/Leveling Maze/Hard.pdf",
+      "is_folder": false,
+      "extension": "pdf",
+      "category": "pdf"
+    },
+    {
+      "name": "Medium.pdf",
+      "path": "CODING ANAK/4. SPECIAL BONUS/3. MAZE/Leveling Maze/Medium.pdf",
+      "is_folder": false,
+      "extension": "pdf",
+      "category": "pdf"
+    },
+    {
+      "name": "Extreme.pdf",
+      "path": "CODING ANAK/4. SPECIAL BONUS/3. MAZE/Leveling Maze/Extreme.pdf",
+      "is_folder": false,
+      "extension": "pdf",
+      "category": "pdf"
+    },
+    {
+      "name": "Maze Alfabet.pdf",
+      "path": "CODING ANAK/4. SPECIAL BONUS/3. MAZE/Maze Alfabet.pdf",
+      "is_folder": false,
+      "extension": "pdf",
+      "category": "pdf"
+    },
+    {
+      "name": "Maze Game 3.pdf",
+      "path": "CODING ANAK/4. SPECIAL BONUS/3. MAZE/Maze Game 3.pdf",
+      "is_folder": false,
+      "extension": "pdf",
+      "category": "pdf"
+    },
+    {
+      "name": "Maze Game 5.pdf",
+      "path": "CODING ANAK/4. SPECIAL BONUS/3. MAZE/Maze Game 5.pdf",
+      "is_folder": false,
+      "extension": "pdf",
+      "category": "pdf"
+    },
+    {
+      "name": "Maze Game 4.pdf",
+      "path": "CODING ANAK/4. SPECIAL BONUS/3. MAZE/Maze Game 4.pdf",
+      "is_folder": false,
+      "extension": "pdf",
+      "category": "pdf"
+    },
+    {
+      "name": "Maze Game 2.pdf",
+      "path": "CODING ANAK/4. SPECIAL BONUS/3. MAZE/Maze Game 2.pdf",
+      "is_folder": false,
+      "extension": "pdf",
+      "category": "pdf"
+    },
+    {
+      "name": "Maze Game 1.pdf",
+      "path": "CODING ANAK/4. SPECIAL BONUS/3. MAZE/Maze Game 1.pdf",
+      "is_folder": false,
+      "extension": "pdf",
+      "category": "pdf"
+    },
+    {
+      "name": "2. PUZZEL",
+      "path": "CODING ANAK/4. SPECIAL BONUS/2. PUZZEL",
+      "is_folder": true,
+      "extension": null,
+      "category": "folder"
+    },
+    {
+      "name": "Puzzle 2.pdf",
+      "path": "CODING ANAK/4. SPECIAL BONUS/2. PUZZEL/Puzzle 2.pdf",
+      "is_folder": false,
+      "extension": "pdf",
+      "category": "pdf"
+    },
+    {
+      "name": "Puzzle 1.pdf",
+      "path": "CODING ANAK/4. SPECIAL BONUS/2. PUZZEL/Puzzle 1.pdf",
+      "is_folder": false,
+      "extension": "pdf",
+      "category": "pdf"
+    },
+    {
+      "name": "1. TRACING",
+      "path": "CODING ANAK/4. SPECIAL BONUS/1. TRACING",
+      "is_folder": true,
+      "extension": null,
+      "category": "folder"
+    },
+    {
+      "name": "TRACE CAPITAL ALPHABET",
+      "path": "CODING ANAK/4. SPECIAL BONUS/1. TRACING/TRACE CAPITAL ALPHABET",
+      "is_folder": true,
+      "extension": null,
+      "category": "folder"
+    },
+    {
+      "name": "TRACE THE ALPHABET.pdf",
+      "path": "CODING ANAK/4. SPECIAL BONUS/1. TRACING/TRACE CAPITAL ALPHABET/TRACE THE ALPHABET.pdf",
+      "is_folder": false,
+      "extension": "pdf",
+      "category": "pdf"
+    },
+    {
+      "name": "TRACE AND COLOR",
+      "path": "CODING ANAK/4. SPECIAL BONUS/1. TRACING/TRACE AND COLOR",
+      "is_folder": true,
+      "extension": null,
+      "category": "folder"
+    },
+    {
+      "name": "TRACE AND COLOR 2.pdf",
+      "path": "CODING ANAK/4. SPECIAL BONUS/1. TRACING/TRACE AND COLOR/TRACE AND COLOR 2.pdf",
+      "is_folder": false,
+      "extension": "pdf",
+      "category": "pdf"
+    },
+    {
+      "name": "TRACE AND COLOR.pdf",
+      "path": "CODING ANAK/4. SPECIAL BONUS/1. TRACING/TRACE AND COLOR/TRACE AND COLOR.pdf",
+      "is_folder": false,
+      "extension": "pdf",
+      "category": "pdf"
+    },
+    {
+      "name": "TRACE THE NUMBER",
+      "path": "CODING ANAK/4. SPECIAL BONUS/1. TRACING/TRACE THE NUMBER",
+      "is_folder": true,
+      "extension": null,
+      "category": "folder"
+    },
+    {
+      "name": "TRACE THE NUMBER.pdf",
+      "path": "CODING ANAK/4. SPECIAL BONUS/1. TRACING/TRACE THE NUMBER/TRACE THE NUMBER.pdf",
+      "is_folder": false,
+      "extension": "pdf",
+      "category": "pdf"
+    },
+    {
+      "name": "TRACE THE PATTERN",
+      "path": "CODING ANAK/4. SPECIAL BONUS/1. TRACING/TRACE THE PATTERN",
+      "is_folder": true,
+      "extension": null,
+      "category": "folder"
+    },
+    {
+      "name": "Trace the pattern.pdf",
+      "path": "CODING ANAK/4. SPECIAL BONUS/1. TRACING/TRACE THE PATTERN/Trace the pattern.pdf",
+      "is_folder": false,
+      "extension": "pdf",
+      "category": "pdf"
+    },
+    {
+      "name": "TRACING LINES",
+      "path": "CODING ANAK/4. SPECIAL BONUS/1. TRACING/TRACING LINES",
+      "is_folder": true,
+      "extension": null,
+      "category": "folder"
+    },
+    {
+      "name": "Trace the LINES 7.pdf",
+      "path": "CODING ANAK/4. SPECIAL BONUS/1. TRACING/TRACING LINES/Trace the LINES 7.pdf",
+      "is_folder": false,
+      "extension": "pdf",
+      "category": "pdf"
+    },
+    {
+      "name": "Trace the LINES 6.pdf",
+      "path": "CODING ANAK/4. SPECIAL BONUS/1. TRACING/TRACING LINES/Trace the LINES 6.pdf",
+      "is_folder": false,
+      "extension": "pdf",
+      "category": "pdf"
+    },
+    {
+      "name": "Trace the LINES 5.pdf",
+      "path": "CODING ANAK/4. SPECIAL BONUS/1. TRACING/TRACING LINES/Trace the LINES 5.pdf",
+      "is_folder": false,
+      "extension": "pdf",
+      "category": "pdf"
+    },
+    {
+      "name": "Trace the LINES 4.pdf",
+      "path": "CODING ANAK/4. SPECIAL BONUS/1. TRACING/TRACING LINES/Trace the LINES 4.pdf",
+      "is_folder": false,
+      "extension": "pdf",
+      "category": "pdf"
+    },
+    {
+      "name": "Trace the LINES 3.pdf",
+      "path": "CODING ANAK/4. SPECIAL BONUS/1. TRACING/TRACING LINES/Trace the LINES 3.pdf",
+      "is_folder": false,
+      "extension": "pdf",
+      "category": "pdf"
+    },
+    {
+      "name": "Trace the LINES 2.pdf",
+      "path": "CODING ANAK/4. SPECIAL BONUS/1. TRACING/TRACING LINES/Trace the LINES 2.pdf",
+      "is_folder": false,
+      "extension": "pdf",
+      "category": "pdf"
+    },
+    {
+      "name": "Trace the LINES 1.pdf",
+      "path": "CODING ANAK/4. SPECIAL BONUS/1. TRACING/TRACING LINES/Trace the LINES 1.pdf",
+      "is_folder": false,
+      "extension": "pdf",
+      "category": "pdf"
+    },
+    {
+      "name": "TRACING SMALL ALPHABET",
+      "path": "CODING ANAK/4. SPECIAL BONUS/1. TRACING/TRACING SMALL ALPHABET",
+      "is_folder": true,
+      "extension": null,
+      "category": "folder"
+    },
+    {
+      "name": "TRACE THE SMALL ALPHABET.pdf",
+      "path": "CODING ANAK/4. SPECIAL BONUS/1. TRACING/TRACING SMALL ALPHABET/TRACE THE SMALL ALPHABET.pdf",
+      "is_folder": false,
+      "extension": "pdf",
+      "category": "pdf"
+    },
+    {
+      "name": "TRACING SHAPES",
+      "path": "CODING ANAK/4. SPECIAL BONUS/1. TRACING/TRACING SHAPES",
+      "is_folder": true,
+      "extension": null,
+      "category": "folder"
+    },
+    {
+      "name": "TRACE THE SHAPES 2.pdf",
+      "path": "CODING ANAK/4. SPECIAL BONUS/1. TRACING/TRACING SHAPES/TRACE THE SHAPES 2.pdf",
+      "is_folder": false,
+      "extension": "pdf",
+      "category": "pdf"
+    },
+    {
+      "name": "Trace the SHAPES.pdf",
+      "path": "CODING ANAK/4. SPECIAL BONUS/1. TRACING/TRACING SHAPES/Trace the SHAPES.pdf",
+      "is_folder": false,
+      "extension": "pdf",
+      "category": "pdf"
+    },
+    {
+      "name": "3. BONUS",
+      "path": "CODING ANAK/3. BONUS",
+      "is_folder": true,
+      "extension": null,
+      "category": "folder"
+    },
+    {
+      "name": "2. 8 GAMES EDUKASI",
+      "path": "CODING ANAK/3. BONUS/2. 8 GAMES EDUKASI",
+      "is_folder": true,
+      "extension": null,
+      "category": "folder"
+    },
+    {
+      "name": "LINK GAMES SEMUA SERI LISENCE MMR (8 Games).pdf",
+      "path": "CODING ANAK/3. BONUS/2. 8 GAMES EDUKASI/LINK GAMES SEMUA SERI LISENCE MMR (8 Games).pdf",
+      "is_folder": false,
+      "extension": "pdf",
+      "category": "pdf"
+    },
+    {
+      "name": "COVER GAMES",
+      "path": "CODING ANAK/3. BONUS/2. 8 GAMES EDUKASI/COVER GAMES",
+      "is_folder": true,
+      "extension": null,
+      "category": "folder"
+    },
+    {
+      "name": "COVER PRODUK MMR (1).png",
+      "path": "CODING ANAK/3. BONUS/2. 8 GAMES EDUKASI/COVER GAMES/COVER PRODUK MMR (1).png",
+      "is_folder": false,
+      "extension": "png",
+      "category": "image"
+    },
+    {
+      "name": "COVER PRODUK MMR (2).png",
+      "path": "CODING ANAK/3. BONUS/2. 8 GAMES EDUKASI/COVER GAMES/COVER PRODUK MMR (2).png",
+      "is_folder": false,
+      "extension": "png",
+      "category": "image"
+    },
+    {
+      "name": "COVER PRODUK MMR (6).png",
+      "path": "CODING ANAK/3. BONUS/2. 8 GAMES EDUKASI/COVER GAMES/COVER PRODUK MMR (6).png",
+      "is_folder": false,
+      "extension": "png",
+      "category": "image"
+    },
+    {
+      "name": "COVER PRODUK MMR (5).png",
+      "path": "CODING ANAK/3. BONUS/2. 8 GAMES EDUKASI/COVER GAMES/COVER PRODUK MMR (5).png",
+      "is_folder": false,
+      "extension": "png",
+      "category": "image"
+    },
+    {
+      "name": "COVER PRODUK MMR (8).png",
+      "path": "CODING ANAK/3. BONUS/2. 8 GAMES EDUKASI/COVER GAMES/COVER PRODUK MMR (8).png",
+      "is_folder": false,
+      "extension": "png",
+      "category": "image"
+    },
+    {
+      "name": "COVER PRODUK MMR (4).png",
+      "path": "CODING ANAK/3. BONUS/2. 8 GAMES EDUKASI/COVER GAMES/COVER PRODUK MMR (4).png",
+      "is_folder": false,
+      "extension": "png",
+      "category": "image"
+    },
+    {
+      "name": "COVER PRODUK MMR (7).png",
+      "path": "CODING ANAK/3. BONUS/2. 8 GAMES EDUKASI/COVER GAMES/COVER PRODUK MMR (7).png",
+      "is_folder": false,
+      "extension": "png",
+      "category": "image"
+    },
+    {
+      "name": "COVER PRODUK MMR (9).png",
+      "path": "CODING ANAK/3. BONUS/2. 8 GAMES EDUKASI/COVER GAMES/COVER PRODUK MMR (9).png",
+      "is_folder": false,
+      "extension": "png",
+      "category": "image"
+    },
+    {
+      "name": "COVER PRODUK MMR (3).png",
+      "path": "CODING ANAK/3. BONUS/2. 8 GAMES EDUKASI/COVER GAMES/COVER PRODUK MMR (3).png",
+      "is_folder": false,
+      "extension": "png",
+      "category": "image"
+    },
+    {
+      "name": "1. 100 DONGENG BERSUARA",
+      "path": "CODING ANAK/3. BONUS/1. 100 DONGENG BERSUARA",
+      "is_folder": true,
+      "extension": null,
+      "category": "folder"
+    },
+    {
+      "name": "TEMPLATE VIDEO.pdf",
+      "path": "CODING ANAK/3. BONUS/1. 100 DONGENG BERSUARA/TEMPLATE VIDEO.pdf",
+      "is_folder": false,
+      "extension": "pdf",
+      "category": "pdf"
+    },
+    {
+      "name": "2. SPLIT HALAMAN",
+      "path": "CODING ANAK/2. SPLIT HALAMAN",
+      "is_folder": true,
+      "extension": null,
+      "category": "folder"
+    },
+    {
+      "name": "CODING ANAK LEVEL 3",
+      "path": "CODING ANAK/2. SPLIT HALAMAN/CODING ANAK LEVEL 3",
+      "is_folder": true,
+      "extension": null,
+      "category": "folder"
+    },
+    {
+      "name": "Logika Pola.pdf",
+      "path": "CODING ANAK/2. SPLIT HALAMAN/CODING ANAK LEVEL 3/Logika Pola.pdf",
+      "is_folder": false,
+      "extension": "pdf",
+      "category": "pdf"
+    },
+    {
+      "name": "Operasi Pola Gambar.pdf",
+      "path": "CODING ANAK/2. SPLIT HALAMAN/CODING ANAK LEVEL 3/Operasi Pola Gambar.pdf",
+      "is_folder": false,
+      "extension": "pdf",
+      "category": "pdf"
+    },
+    {
+      "name": "Coding Bentuk.pdf",
+      "path": "CODING ANAK/2. SPLIT HALAMAN/CODING ANAK LEVEL 3/Coding Bentuk.pdf",
+      "is_folder": false,
+      "extension": "pdf",
+      "category": "pdf"
+    },
+    {
+      "name": "Bangun Ruang.pdf",
+      "path": "CODING ANAK/2. SPLIT HALAMAN/CODING ANAK LEVEL 3/Bangun Ruang.pdf",
+      "is_folder": false,
+      "extension": "pdf",
+      "category": "pdf"
+    },
+    {
+      "name": "Temukan Koordinat.pdf",
+      "path": "CODING ANAK/2. SPLIT HALAMAN/CODING ANAK LEVEL 3/Temukan Koordinat.pdf",
+      "is_folder": false,
+      "extension": "pdf",
+      "category": "pdf"
+    },
+    {
+      "name": "Kesamaan Gambar.pdf",
+      "path": "CODING ANAK/2. SPLIT HALAMAN/CODING ANAK LEVEL 3/Kesamaan Gambar.pdf",
+      "is_folder": false,
+      "extension": "pdf",
+      "category": "pdf"
+    },
+    {
+      "name": "CODING ANAK LEVEL 2",
+      "path": "CODING ANAK/2. SPLIT HALAMAN/CODING ANAK LEVEL 2",
+      "is_folder": true,
+      "extension": null,
+      "category": "folder"
+    },
+    {
+      "name": "Penjumlahan.pdf",
+      "path": "CODING ANAK/2. SPLIT HALAMAN/CODING ANAK LEVEL 2/Penjumlahan.pdf",
+      "is_folder": false,
+      "extension": "pdf",
+      "category": "pdf"
+    },
+    {
+      "name": "Penjumlahan.pdf",
+      "path": "CODING ANAK/2. SPLIT HALAMAN/CODING ANAK LEVEL 2/Penjumlahan.pdf",
+      "is_folder": false,
+      "extension": "pdf",
+      "category": "pdf"
+    },
+    {
+      "name": "Menghubungkan Pola.pdf",
+      "path": "CODING ANAK/2. SPLIT HALAMAN/CODING ANAK LEVEL 2/Menghubungkan Pola.pdf",
+      "is_folder": false,
+      "extension": "pdf",
+      "category": "pdf"
+    },
+    {
+      "name": "Penjumlahan.pdf",
+      "path": "CODING ANAK/2. SPLIT HALAMAN/CODING ANAK LEVEL 2/Penjumlahan.pdf",
+      "is_folder": false,
+      "extension": "pdf",
+      "category": "pdf"
+    },
+    {
+      "name": "Penjumlahan.pdf",
+      "path": "CODING ANAK/2. SPLIT HALAMAN/CODING ANAK LEVEL 2/Penjumlahan.pdf",
+      "is_folder": false,
+      "extension": "pdf",
+      "category": "pdf"
+    },
+    {
+      "name": "Penjumlahan.pdf",
+      "path": "CODING ANAK/2. SPLIT HALAMAN/CODING ANAK LEVEL 2/Penjumlahan.pdf",
+      "is_folder": false,
+      "extension": "pdf",
+      "category": "pdf"
+    },
+    {
+      "name": "Pengurangan.pdf",
+      "path": "CODING ANAK/2. SPLIT HALAMAN/CODING ANAK LEVEL 2/Pengurangan.pdf",
+      "is_folder": false,
+      "extension": "pdf",
+      "category": "pdf"
+    },
+    {
+      "name": "Pengurangan.pdf",
+      "path": "CODING ANAK/2. SPLIT HALAMAN/CODING ANAK LEVEL 2/Pengurangan.pdf",
+      "is_folder": false,
+      "extension": "pdf",
+      "category": "pdf"
+    },
+    {
+      "name": "Penjumlahan dan Pengurangan.pdf",
+      "path": "CODING ANAK/2. SPLIT HALAMAN/CODING ANAK LEVEL 2/Penjumlahan dan Pengurangan.pdf",
+      "is_folder": false,
+      "extension": "pdf",
+      "category": "pdf"
+    },
+    {
+      "name": "Penjumlahan dan Mewarnai.pdf",
+      "path": "CODING ANAK/2. SPLIT HALAMAN/CODING ANAK LEVEL 2/Penjumlahan dan Mewarnai.pdf",
+      "is_folder": false,
+      "extension": "pdf",
+      "category": "pdf"
+    },
+    {
+      "name": "Penjumlahan.pdf",
+      "path": "CODING ANAK/2. SPLIT HALAMAN/CODING ANAK LEVEL 2/Penjumlahan.pdf",
+      "is_folder": false,
+      "extension": "pdf",
+      "category": "pdf"
+    },
+    {
+      "name": "Luas Obyek.pdf",
+      "path": "CODING ANAK/2. SPLIT HALAMAN/CODING ANAK LEVEL 2/Luas Obyek.pdf",
+      "is_folder": false,
+      "extension": "pdf",
+      "category": "pdf"
+    },
+    {
+      "name": "Penjumlahan.pdf",
+      "path": "CODING ANAK/2. SPLIT HALAMAN/CODING ANAK LEVEL 2/Penjumlahan.pdf",
+      "is_folder": false,
+      "extension": "pdf",
+      "category": "pdf"
+    },
+    {
+      "name": "Password Kode.pdf",
+      "path": "CODING ANAK/2. SPLIT HALAMAN/CODING ANAK LEVEL 2/Password Kode.pdf",
+      "is_folder": false,
+      "extension": "pdf",
+      "category": "pdf"
+    },
+    {
+      "name": "Matematika Bentuk.pdf",
+      "path": "CODING ANAK/2. SPLIT HALAMAN/CODING ANAK LEVEL 2/Matematika Bentuk.pdf",
+      "is_folder": false,
+      "extension": "pdf",
+      "category": "pdf"
+    },
+    {
+      "name": "Logika Geometri.pdf",
+      "path": "CODING ANAK/2. SPLIT HALAMAN/CODING ANAK LEVEL 2/Logika Geometri.pdf",
+      "is_folder": false,
+      "extension": "pdf",
+      "category": "pdf"
+    },
+    {
+      "name": "Menimbang dan Menjumlah.pdf",
+      "path": "CODING ANAK/2. SPLIT HALAMAN/CODING ANAK LEVEL 2/Menimbang dan Menjumlah.pdf",
+      "is_folder": false,
+      "extension": "pdf",
+      "category": "pdf"
+    },
+    {
+      "name": "CODING ANAK LEVEL 1",
+      "path": "CODING ANAK/2. SPLIT HALAMAN/CODING ANAK LEVEL 1",
+      "is_folder": true,
+      "extension": null,
+      "category": "folder"
+    },
+    {
+      "name": "Mewarnai",
+      "path": "CODING ANAK/2. SPLIT HALAMAN/CODING ANAK LEVEL 1/Mewarnai",
+      "is_folder": true,
+      "extension": null,
+      "category": "folder"
+    },
+    {
+      "name": "Mewarnai.pdf",
+      "path": "CODING ANAK/2. SPLIT HALAMAN/CODING ANAK LEVEL 1/Mewarnai/Mewarnai.pdf",
+      "is_folder": false,
+      "extension": "pdf",
+      "category": "pdf"
+    },
+    {
+      "name": "Mewarnai Angka.pdf",
+      "path": "CODING ANAK/2. SPLIT HALAMAN/CODING ANAK LEVEL 1/Mewarnai/Mewarnai Angka.pdf",
+      "is_folder": false,
+      "extension": "pdf",
+      "category": "pdf"
+    },
+    {
+      "name": "Coding Warna.pdf",
+      "path": "CODING ANAK/2. SPLIT HALAMAN/CODING ANAK LEVEL 1/Mewarnai/Coding Warna.pdf",
+      "is_folder": false,
+      "extension": "pdf",
+      "category": "pdf"
+    },
+    {
+      "name": "Menghitung Dan Mewarnai.pdf",
+      "path": "CODING ANAK/2. SPLIT HALAMAN/CODING ANAK LEVEL 1/Mewarnai/Menghitung Dan Mewarnai.pdf",
+      "is_folder": false,
+      "extension": "pdf",
+      "category": "pdf"
+    },
+    {
+      "name": "Mewarnai Sesuai Angka.pdf",
+      "path": "CODING ANAK/2. SPLIT HALAMAN/CODING ANAK LEVEL 1/Mewarnai/Mewarnai Sesuai Angka.pdf",
+      "is_folder": false,
+      "extension": "pdf",
+      "category": "pdf"
+    },
+    {
+      "name": "Menyusun Kata",
+      "path": "CODING ANAK/2. SPLIT HALAMAN/CODING ANAK LEVEL 1/Menyusun Kata",
+      "is_folder": true,
+      "extension": null,
+      "category": "folder"
+    },
+    {
+      "name": "Menyusun Kata.pdf",
+      "path": "CODING ANAK/2. SPLIT HALAMAN/CODING ANAK LEVEL 1/Menyusun Kata/Menyusun Kata.pdf",
+      "is_folder": false,
+      "extension": "pdf",
+      "category": "pdf"
+    },
+    {
+      "name": "Menulis Huruf.pdf",
+      "path": "CODING ANAK/2. SPLIT HALAMAN/CODING ANAK LEVEL 1/Menyusun Kata/Menulis Huruf.pdf",
+      "is_folder": false,
+      "extension": "pdf",
+      "category": "pdf"
+    },
+    {
+      "name": "Menulis Huruf.pdf",
+      "path": "CODING ANAK/2. SPLIT HALAMAN/CODING ANAK LEVEL 1/Menyusun Kata/Menulis Huruf.pdf",
+      "is_folder": false,
+      "extension": "pdf",
+      "category": "pdf"
+    },
+    {
+      "name": "Coding Nama Hewan.pdf",
+      "path": "CODING ANAK/2. SPLIT HALAMAN/CODING ANAK LEVEL 1/Menyusun Kata/Coding Nama Hewan.pdf",
+      "is_folder": false,
+      "extension": "pdf",
+      "category": "pdf"
+    },
+    {
+      "name": "Menghubungkan Garis",
+      "path": "CODING ANAK/2. SPLIT HALAMAN/CODING ANAK LEVEL 1/Menghubungkan Garis",
+      "is_folder": true,
+      "extension": null,
+      "category": "folder"
+    },
+    {
+      "name": "Menghubungkan Pola.pdf",
+      "path": "CODING ANAK/2. SPLIT HALAMAN/CODING ANAK LEVEL 1/Menghubungkan Garis/Menghubungkan Pola.pdf",
+      "is_folder": false,
+      "extension": "pdf",
+      "category": "pdf"
+    },
+    {
+      "name": "Menghubungkan Garis.pdf",
+      "path": "CODING ANAK/2. SPLIT HALAMAN/CODING ANAK LEVEL 1/Menghubungkan Garis/Menghubungkan Garis.pdf",
+      "is_folder": false,
+      "extension": "pdf",
+      "category": "pdf"
+    },
+    {
+      "name": "Menggambar Pola.pdf",
+      "path": "CODING ANAK/2. SPLIT HALAMAN/CODING ANAK LEVEL 1/Menghubungkan Garis/Menggambar Pola.pdf",
+      "is_folder": false,
+      "extension": "pdf",
+      "category": "pdf"
+    },
+    {
+      "name": "Menghubungkan Sesuai Warna.pdf",
+      "path": "CODING ANAK/2. SPLIT HALAMAN/CODING ANAK LEVEL 1/Menghubungkan Garis/Menghubungkan Sesuai Warna.pdf",
+      "is_folder": false,
+      "extension": "pdf",
+      "category": "pdf"
+    },
+    {
+      "name": "Menggambar Pola.pdf",
+      "path": "CODING ANAK/2. SPLIT HALAMAN/CODING ANAK LEVEL 1/Menghubungkan Garis/Menggambar Pola.pdf",
+      "is_folder": false,
+      "extension": "pdf",
+      "category": "pdf"
+    },
+    {
+      "name": "Koneksi Warna.pdf",
+      "path": "CODING ANAK/2. SPLIT HALAMAN/CODING ANAK LEVEL 1/Menghubungkan Garis/Koneksi Warna.pdf",
+      "is_folder": false,
+      "extension": "pdf",
+      "category": "pdf"
+    },
+    {
+      "name": "Menggambar Pola.pdf",
+      "path": "CODING ANAK/2. SPLIT HALAMAN/CODING ANAK LEVEL 1/Menghubungkan Garis/Menggambar Pola.pdf",
+      "is_folder": false,
+      "extension": "pdf",
+      "category": "pdf"
+    },
+    {
+      "name": "Coding Warna 1.pdf",
+      "path": "CODING ANAK/2. SPLIT HALAMAN/CODING ANAK LEVEL 1/Coding Warna 1.pdf",
+      "is_folder": false,
+      "extension": "pdf",
+      "category": "pdf"
+    },
+    {
+      "name": "Menggambar Garis.pdf",
+      "path": "CODING ANAK/2. SPLIT HALAMAN/CODING ANAK LEVEL 1/Menggambar Garis.pdf",
+      "is_folder": false,
+      "extension": "pdf",
+      "category": "pdf"
+    },
+    {
+      "name": "Coding Arah.pdf",
+      "path": "CODING ANAK/2. SPLIT HALAMAN/CODING ANAK LEVEL 1/Coding Arah.pdf",
+      "is_folder": false,
+      "extension": "pdf",
+      "category": "pdf"
+    },
+    {
+      "name": "Coding Bentuk Geometri.pdf",
+      "path": "CODING ANAK/2. SPLIT HALAMAN/CODING ANAK LEVEL 1/Coding Bentuk Geometri.pdf",
+      "is_folder": false,
+      "extension": "pdf",
+      "category": "pdf"
+    },
+    {
+      "name": "Coding Warna 2.pdf",
+      "path": "CODING ANAK/2. SPLIT HALAMAN/CODING ANAK LEVEL 1/Coding Warna 2.pdf",
+      "is_folder": false,
+      "extension": "pdf",
+      "category": "pdf"
+    },
+    {
+      "name": "Menulis Angka.pdf",
+      "path": "CODING ANAK/2. SPLIT HALAMAN/CODING ANAK LEVEL 1/Menulis Angka.pdf",
+      "is_folder": false,
+      "extension": "pdf",
+      "category": "pdf"
+    },
+    {
+      "name": "Coding Warna dan Bentuk.pdf",
+      "path": "CODING ANAK/2. SPLIT HALAMAN/CODING ANAK LEVEL 1/Coding Warna dan Bentuk.pdf",
+      "is_folder": false,
+      "extension": "pdf",
+      "category": "pdf"
+    },
+    {
+      "name": "Coding Warna 5.pdf",
+      "path": "CODING ANAK/2. SPLIT HALAMAN/CODING ANAK LEVEL 1/Coding Warna 5.pdf",
+      "is_folder": false,
+      "extension": "pdf",
+      "category": "pdf"
+    },
+    {
+      "name": "Coding Warna 4.pdf",
+      "path": "CODING ANAK/2. SPLIT HALAMAN/CODING ANAK LEVEL 1/Coding Warna 4.pdf",
+      "is_folder": false,
+      "extension": "pdf",
+      "category": "pdf"
+    },
+    {
+      "name": "Urutan Angka.pdf",
+      "path": "CODING ANAK/2. SPLIT HALAMAN/CODING ANAK LEVEL 1/Urutan Angka.pdf",
+      "is_folder": false,
+      "extension": "pdf",
+      "category": "pdf"
+    },
+    {
+      "name": "Kesamaan Gambar.pdf",
+      "path": "CODING ANAK/2. SPLIT HALAMAN/CODING ANAK LEVEL 1/Kesamaan Gambar.pdf",
+      "is_folder": false,
+      "extension": "pdf",
+      "category": "pdf"
+    },
+    {
+      "name": "Meminadahkan Objek.pdf",
+      "path": "CODING ANAK/2. SPLIT HALAMAN/CODING ANAK LEVEL 1/Meminadahkan Objek.pdf",
+      "is_folder": false,
+      "extension": "pdf",
+      "category": "pdf"
+    },
+    {
+      "name": "Coding Panah dan Angka.pdf",
+      "path": "CODING ANAK/2. SPLIT HALAMAN/CODING ANAK LEVEL 1/Coding Panah dan Angka.pdf",
+      "is_folder": false,
+      "extension": "pdf",
+      "category": "pdf"
+    },
+    {
+      "name": "Coding Bentuk.pdf",
+      "path": "CODING ANAK/2. SPLIT HALAMAN/CODING ANAK LEVEL 1/Coding Bentuk.pdf",
+      "is_folder": false,
+      "extension": "pdf",
+      "category": "pdf"
+    },
+    {
+      "name": "Matematika Hantu.pdf",
+      "path": "CODING ANAK/2. SPLIT HALAMAN/CODING ANAK LEVEL 1/Matematika Hantu.pdf",
+      "is_folder": false,
+      "extension": "pdf",
+      "category": "pdf"
+    },
+    {
+      "name": "1. KONTEN UTAMA",
+      "path": "CODING ANAK/1. KONTEN UTAMA",
+      "is_folder": true,
+      "extension": null,
+      "category": "folder"
+    },
+    {
+      "name": "Coding Anak Level 1 Vol.2.pdf",
+      "path": "CODING ANAK/1. KONTEN UTAMA/Coding Anak Level 1 Vol.2.pdf",
+      "is_folder": false,
+      "extension": "pdf",
+      "category": "pdf"
+    },
+    {
+      "name": "Bonus Coding Anak 1.pdf",
+      "path": "CODING ANAK/1. KONTEN UTAMA/Bonus Coding Anak 1.pdf",
+      "is_folder": false,
+      "extension": "pdf",
+      "category": "pdf"
+    },
+    {
+      "name": "Coding Anak Level 3.pdf",
+      "path": "CODING ANAK/1. KONTEN UTAMA/Coding Anak Level 3.pdf",
+      "is_folder": false,
+      "extension": "pdf",
+      "category": "pdf"
+    },
+    {
+      "name": "Coding Anak Level 2.pdf",
+      "path": "CODING ANAK/1. KONTEN UTAMA/Coding Anak Level 2.pdf",
+      "is_folder": false,
+      "extension": "pdf",
+      "category": "pdf"
+    },
+    {
+      "name": "Coding Anak Level 1.pdf",
+      "path": "CODING ANAK/1. KONTEN UTAMA/Coding Anak Level 1.pdf",
+      "is_folder": false,
+      "extension": "pdf",
+      "category": "pdf"
+    },
+    {
+      "name": "Coding Anak TK/PAUD.pdf",
+      "path": "CODING ANAK/1. KONTEN UTAMA/Coding Anak TK/PAUD.pdf",
+      "is_folder": false,
+      "extension": "pdf",
+      "category": "pdf"
+    },
+    {
+      "name": "Challenge 54 Hari Coding Anak.pdf",
+      "path": "CODING ANAK/1. KONTEN UTAMA/Challenge 54 Hari Coding Anak.pdf",
+      "is_folder": false,
+      "extension": "pdf",
+      "category": "pdf"
+    }
+  ]
+}

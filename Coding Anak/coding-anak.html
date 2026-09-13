@@ -1,0 +1,1252 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Coding Anak — Paket Worksheet Coding Unplugged PAUD–SD | Promo Spesial</title>
+<meta name="description" content="Paket lengkap worksheet coding unplugged untuk anak PAUD-SD: modul bertahap, Challenge 54 Hari, tracing, maze, puzzle, 100 dongeng bersuara, dan 8 games edukasi. Sekali bayar, akses cetak seumur hidup.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700;9..40,800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --blue:#3D6BEA; --blue-dark:#2F55C7; --blue-ink:#23356B;
+  --yellow:#F6B93B; --pink:#E8618C; --tosca:#45C4B0; --purple:#7C5CBF;
+  --bg:#F5F7FC; --card:#FFFFFF; --ink:#33405E; --muted:#6B7690;
+  --orange:#E8590C; --orange-dark:#AD3E02; --orange-soft:#FFF1E6;
+  --radius:22px;
+  --shadow:0 10px 30px rgba(45,70,140,.10);
+  --shadow-sm:0 4px 14px rgba(45,70,140,.08);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:132px;-webkit-tap-highlight-color:transparent}
+body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--ink);line-height:1.65;font-size:1rem;overflow-x:hidden;position:relative}
+body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background:
+ radial-gradient(560px 420px at 4% 2%, rgba(246,185,59,.14), transparent 65%),
+ radial-gradient(620px 460px at 98% 10%, rgba(61,107,234,.12), transparent 65%),
+ radial-gradient(520px 420px at 3% 96%, rgba(232,97,140,.11), transparent 65%),
+ radial-gradient(560px 440px at 97% 94%, rgba(69,196,176,.11), transparent 65%)}
+h1,h2,h3,h4{font-family:'DM Sans',sans-serif;color:var(--blue-ink);line-height:1.25}
+img,svg{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+.sec{padding:72px 0;position:relative}
+.sec-alt{background:#fff}
+.eyebrow{display:inline-block;font-weight:600;font-size:.8rem;letter-spacing:.06em;text-transform:uppercase;background:#E4EEFF;color:var(--blue-dark);padding:7px 16px;border-radius:999px;margin-bottom:16px}
+.eyebrow.promo{background:var(--orange-soft);color:var(--orange-dark)}
+.sec-title{font-size:clamp(1.6rem,3.6vw,2.4rem);font-weight:700;margin-bottom:14px}
+.sec-sub{color:var(--muted);max-width:640px;font-size:1.05rem}
+.center{text-align:center}
+.center .sec-sub{margin:0 auto}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-weight:700;border-radius:999px;padding:16px 30px;font-size:1.02rem;min-height:48px;cursor:pointer;border:none;transition:transform .15s ease,box-shadow .15s ease}
+.btn-primary{background:var(--orange);color:#fff;box-shadow:0 8px 22px rgba(232,89,12,.36)}
+.btn-primary:hover{background:var(--orange-dark);transform:translateY(-2px)}
+.btn-ghost{background:#fff;color:var(--blue-dark);border:2px solid #D7E5FF}
+.btn-ghost:hover{border-color:var(--blue)}
+.microcopy{font-size:.85rem;color:var(--muted);margin-top:12px}
+
+/* sticky header */
+.topbar-wrap{position:sticky;top:0;z-index:70}
+.site-header{position:static;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border-bottom:1px solid #E3EDFF}
+.nav{display:flex;align-items:center;justify-content:space-between;height:70px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:1.15rem;color:var(--blue-ink)}
+.logo-mark{width:42px;height:42px;border-radius:14px;background:#fff;display:grid;place-items:center;box-shadow:var(--shadow-sm);font-size:1.3rem}
+.nav-links{display:flex;gap:26px;font-weight:700;font-size:.95rem;color:var(--muted)}
+.nav-links a:hover{color:var(--blue)}
+.nav .btn{padding:11px 22px;font-size:.92rem}
+.nav-toggle{display:none;background:none;border:none;font-size:1.6rem;color:var(--blue-ink);cursor:pointer}
+
+/* promo bar */
+.promo-bar{background:linear-gradient(90deg,var(--orange),#F97316 55%,var(--orange-dark));color:#fff;position:relative;overflow:hidden}
+.promo-bar::after{content:"";position:absolute;inset:0;background:repeating-linear-gradient(115deg,rgba(255,255,255,.10) 0 14px,transparent 14px 28px);pointer-events:none}
+.promo-bar-in{display:flex;align-items:center;gap:14px;min-height:46px;padding-top:7px;padding-bottom:7px;flex-wrap:wrap;justify-content:center;position:relative;z-index:1}
+.pb-txt{font-size:.86rem;font-weight:600;letter-spacing:.01em}
+.pb-txt b{font-weight:800}
+.pb-cd{display:inline-flex;align-items:center;gap:7px;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.32);border-radius:999px;padding:5px 13px;font-size:.8rem;font-weight:700;white-space:nowrap}
+.pb-cd b{font-variant-numeric:tabular-nums;font-size:.92rem;letter-spacing:.04em}
+.pb-btn{background:#fff;color:var(--orange-dark);font-weight:800;font-size:.8rem;padding:7px 16px;border-radius:999px;white-space:nowrap;box-shadow:0 4px 12px rgba(0,0,0,.18)}
+.pb-btn:hover{background:#FFF3EA}
+
+/* hero */
+.hero{padding:64px 0 80px;overflow:hidden;position:relative}
+.doodle{position:absolute;font-size:1.5rem;opacity:.5;user-select:none;pointer-events:none}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center}
+.hero h1{font-size:clamp(1.9rem,4.4vw,3rem);font-weight:800;margin-bottom:18px}
+.hero h1 .hl{color:var(--blue)}
+.hero-sub{font-size:1.12rem;color:var(--muted);margin-bottom:16px}
+.hero-highlight{display:flex;gap:10px;align-items:flex-start;background:#FFF7E0;border:1.5px dashed var(--yellow);border-radius:16px;padding:12px 16px;font-weight:700;color:#8A6400;margin-bottom:22px;font-size:.98rem}
+.badges{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:22px}
+.badge{font-weight:800;font-size:.85rem;padding:8px 15px;border-radius:999px;background:#fff;box-shadow:var(--shadow-sm)}
+.badge.b1{color:var(--blue-dark)} .badge.b2{color:#1E9C90} .badge.b3{color:#B0538A}
+.price-row{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;margin-bottom:22px}
+.price-old{font-size:1.25rem;color:#9AA9C7;text-decoration:line-through;font-weight:700}
+.price-new{font-size:clamp(2.3rem,5vw,3.2rem);font-weight:800;color:var(--orange)}
+.price-tag{background:var(--pink);color:#fff;font-weight:800;font-size:.8rem;padding:6px 12px;border-radius:999px}
+
+.price-block{background:#fff;border-radius:22px;padding:20px 22px;box-shadow:var(--shadow);border:1px solid #EDE3E4;margin-bottom:20px}
+.price-block .top{display:flex;align-items:center;gap:9px;flex-wrap:wrap;margin-bottom:6px}
+.promo-chip{display:inline-flex;align-items:center;gap:6px;background:var(--orange);color:#fff;font-weight:800;font-size:.74rem;letter-spacing:.05em;text-transform:uppercase;padding:6px 13px;border-radius:999px}
+.save-chip{background:#FFF3D6;color:#8A6400;font-weight:800;font-size:.78rem;padding:6px 12px;border-radius:999px}
+.price-block .price-row{margin-bottom:8px}
+.perunit{font-size:.9rem;color:var(--muted)}
+.perunit b{color:var(--blue-ink)}
+
+/* scarcity */
+.scarcity{background:linear-gradient(160deg,#FFF6EE,#fff);border:2px solid var(--orange);border-radius:20px;padding:16px 18px;margin-bottom:16px;box-shadow:0 10px 26px rgba(232,89,12,.12)}
+.sc-head{font-weight:800;color:var(--orange-dark);font-size:.95rem;margin-bottom:6px}
+.sc-num{font-size:.92rem;color:var(--muted);margin-bottom:8px}
+.sc-num b{color:var(--orange-dark);font-size:1.05rem}
+.prog{height:12px;border-radius:999px;background:#EAF0FB;overflow:hidden;margin:6px auto 8px;max-width:320px}
+.scarcity .prog{margin:0 0 9px;max-width:none;background:#F6E3D6}
+.prog i{display:block;height:100%;width:0;border-radius:999px;background:linear-gradient(90deg,#F59E0B,var(--orange));transition:width 1.2s cubic-bezier(.2,.8,.3,1)}
+.sc-note{font-size:.82rem;color:var(--muted);line-height:1.5}
+.sc-note b{color:var(--orange-dark)}
+
+/* countdown */
+.cd-box{background:#fff;border:2px solid var(--orange);border-radius:20px;padding:18px 20px;text-align:center;box-shadow:0 12px 30px rgba(232,89,12,.14);max-width:440px}
+.cd-box.on-dark{background:rgba(255,255,255,.10);border-color:rgba(255,255,255,.45);box-shadow:none;margin:0 auto}
+.hero .cd-box{max-width:none;margin-bottom:20px}
+.cd-lbl{font-size:.85rem;font-weight:800;color:var(--orange-dark);text-transform:uppercase;letter-spacing:.05em;margin-bottom:10px}
+.cd-box.on-dark .cd-lbl{color:#FFE27A}
+.cd{display:flex;align-items:flex-start;justify-content:center;gap:6px}
+.cd .u{background:#23356B;color:#fff;border-radius:14px;min-width:66px;padding:9px 6px 7px;display:flex;flex-direction:column;align-items:center;line-height:1}
+.cd-box.on-dark .cd .u{background:rgba(0,0,0,.28)}
+.cd .u b{font-size:1.75rem;font-weight:800;font-variant-numeric:tabular-nums}
+.cd .u i{font-style:normal;font-size:.62rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;opacity:.72;margin-top:5px}
+.cd .sep{font-size:1.5rem;font-weight:800;color:#23356B;padding-top:9px}
+.cd-box.on-dark .cd .sep{color:#fff;opacity:.6}
+.cd-note{margin-top:11px;font-size:.76rem;color:var(--muted);line-height:1.5}
+.cd-box.on-dark .cd-note{color:#CBDBFB}
+.mini-urgent{display:inline-flex;align-items:center;gap:8px;background:var(--orange-soft);color:var(--orange-dark);border-radius:999px;padding:9px 18px;font-weight:800;font-size:.88rem;margin-top:16px}
+
+/* hero visual: worksheet stack mock */
+.hero-visual{position:relative;min-height:420px;display:flex;align-items:center;justify-content:center}
+.ws-stack{position:relative;height:340px;width:100%}
+.ws-paper{position:absolute;width:230px;background:#fff;border-radius:16px;box-shadow:var(--shadow);padding:18px;border:1px solid #EDF2FF}
+.ws-paper .ph{height:8px;border-radius:4px;background:#E7EEFC;margin-bottom:8px}
+.ws-paper .ph.s{width:60%}
+.ws-paper .art{height:110px;border-radius:12px;display:grid;place-items:center;font-size:2.4rem;margin-bottom:12px}
+.wsp1{top:20px;left:6%;transform:rotate(-7deg);z-index:1}
+.wsp2{top:0;left:32%;z-index:2}
+.wsp3{top:34px;right:4%;transform:rotate(7deg);z-index:1}
+.float-chip{position:absolute;background:#fff;border-radius:999px;box-shadow:var(--shadow-sm);padding:8px 14px;font-weight:800;font-size:.8rem;z-index:4}
+.fc1{top:-8px;left:6%;color:var(--purple);animation:bob 4s ease-in-out infinite}
+.fc2{top:44%;right:-8px;color:#B0538A;animation:bob 5s ease-in-out infinite .6s}
+.fc3{bottom:-8px;right:22%;color:#1E9C90;animation:bob 4.5s ease-in-out infinite 1s}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+
+/* problem list */
+.problem-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px;margin-top:36px}
+.problem{background:#fff;border-radius:var(--radius);padding:20px 22px;box-shadow:var(--shadow-sm);display:flex;gap:14px;align-items:flex-start}
+.problem .ic{flex:0 0 40px;height:40px;border-radius:12px;display:grid;place-items:center;font-size:1.1rem;background:#FFEBF2;color:var(--pink)}
+.problem p{font-size:.98rem;color:var(--ink)}
+.closer{margin-top:34px;background:linear-gradient(135deg,var(--blue),var(--purple));color:#fff;border-radius:var(--radius);padding:26px 30px;font-weight:600;font-size:1.12rem;text-align:center;box-shadow:var(--shadow)}
+
+/* benefit cards */
+.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:40px}
+.bcard{background:#fff;border-radius:var(--radius);padding:26px 22px;box-shadow:var(--shadow-sm);border-top:5px solid var(--blue)}
+.bcard:nth-child(2){border-color:var(--tosca)} .bcard:nth-child(3){border-color:var(--yellow)} .bcard:nth-child(4){border-color:var(--pink)}
+.bcard .em{font-size:1.9rem;margin-bottom:12px}
+.bcard h3{font-size:1.06rem;margin-bottom:8px}
+.bcard p{font-size:.93rem;color:var(--muted)}
+
+/* product cards */
+.grid-prod{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:40px}
+.pcard{background:#fff;border-radius:var(--radius);box-shadow:var(--shadow-sm);overflow:hidden;transition:transform .18s ease,box-shadow .18s ease}
+.pcard:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
+.pcard .thumb{height:120px;display:grid;place-items:center;font-size:2.6rem;color:#fff}
+.pcard .body{padding:18px}
+.pcard h3{font-size:1rem;margin-bottom:6px}
+.pcard p{font-size:.88rem;color:var(--muted)}
+.pcard .tag{display:inline-block;font-size:.7rem;font-weight:800;padding:4px 10px;border-radius:999px;background:#EEF4FF;color:var(--blue-dark);margin-bottom:8px}
+.pcard .tag.new{background:#FFE9F1;color:#D14C82}
+.note{margin-top:26px;text-align:center;font-size:.9rem;color:var(--muted);font-style:italic}
+
+/* split sections */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center;margin-top:20px}
+.check-list{list-style:none;margin-top:22px;display:grid;gap:13px}
+.check-list li{display:flex;gap:12px;align-items:flex-start;font-size:1rem}
+.check-list .ck{flex:0 0 26px;height:26px;border-radius:50%;background:#E1F7F4;color:#1E9C90;display:grid;place-items:center;font-size:.8rem;font-weight:800;margin-top:2px}
+.tagline{display:inline-block;background:#F3EDFF;color:var(--purple);font-weight:800;padding:9px 18px;border-radius:999px;font-size:.92rem;margin:6px 0 14px}
+.spot-box{border-radius:26px;box-shadow:0 24px 60px rgba(45,70,140,.20);aspect-ratio:4/3;display:grid;place-items:center;font-size:5rem}
+
+/* two columns benefits */
+.cols-2{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:40px}
+.col-card{background:#fff;border-radius:var(--radius);padding:30px;box-shadow:var(--shadow-sm)}
+.col-card h3{display:flex;align-items:center;gap:10px;font-size:1.2rem;margin-bottom:18px}
+.col-card h3 .ic{width:42px;height:42px;border-radius:13px;display:grid;place-items:center;font-size:1.3rem}
+.col-anak h3 .ic{background:#FFF3D6;color:#B98600}
+.col-ortu h3 .ic{background:#E4EEFF;color:var(--blue-dark)}
+
+/* bonus banner */
+.ws-hero{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center;margin-top:20px}
+.ws-visual{display:flex;align-items:center;justify-content:center}
+.ws-cats{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+.ws-cat{background:#fff;border-radius:999px;padding:8px 15px;box-shadow:var(--shadow-sm);font-weight:700;font-size:.85rem;display:inline-flex;gap:6px;align-items:center;white-space:nowrap}
+.ws-label{margin-top:22px;display:inline-block;background:var(--yellow);color:#5C4300;font-weight:800;padding:11px 20px;border-radius:999px;font-size:.9rem;box-shadow:var(--shadow-sm)}
+.bonus-banner{background:linear-gradient(135deg,#F6B93B,#FF9F43);border-radius:28px;padding:6px;box-shadow:var(--shadow)}
+.bonus-inner{background:#FFFDF4;border-radius:24px;padding:56px 40px}
+
+/* support */
+.support-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:40px}
+.scard{background:#fff;border-radius:var(--radius);padding:26px 22px;box-shadow:var(--shadow-sm);transition:transform .18s ease,box-shadow .18s ease}
+.scard:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.scard .ic{width:48px;height:48px;border-radius:14px;display:grid;place-items:center;font-size:1.4rem;margin-bottom:14px}
+.scard h3{font-size:1.05rem;margin-bottom:8px}
+.scard p{font-size:.93rem;color:var(--muted)}
+
+/* audience */
+.aud-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:40px}
+.acard{background:#fff;border-radius:18px;padding:24px 18px;box-shadow:var(--shadow-sm);text-align:center}
+.acard .em{font-size:2rem;margin-bottom:10px}
+.acard p{font-weight:700;font-size:.92rem;color:var(--blue-ink)}
+
+/* compare */
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:40px;align-items:stretch}
+.cmp{border-radius:var(--radius);padding:32px;box-shadow:var(--shadow-sm)}
+.cmp h3{font-size:1.15rem;margin-bottom:18px}
+.cmp ul{list-style:none;display:grid;gap:13px}
+.cmp li{display:flex;gap:12px;align-items:flex-start;font-size:.97rem}
+.cmp .m{flex:0 0 24px;height:24px;border-radius:50%;display:grid;place-items:center;font-size:.75rem;font-weight:800;margin-top:2px}
+.cmp-bad{background:#fff;border:1.5px solid #EAF0FB}
+.cmp-bad .m{background:#FBE7EC;color:#D6336C}
+.cmp-good{background:linear-gradient(160deg,#3D6BEA,#8F6FD4);color:#fff}
+.cmp-good h3{color:#fff}
+.cmp-good .m{background:rgba(255,255,255,.22);color:#fff}
+.cmp-good li{color:#EAF1FF}
+
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:40px}
+.step{background:#fff;border-radius:var(--radius);padding:30px 24px;box-shadow:var(--shadow-sm);text-align:center;position:relative}
+.step .num{width:52px;height:52px;border-radius:50%;background:var(--blue);color:#fff;display:grid;place-items:center;font-weight:800;font-size:1.3rem;margin:0 auto 16px;box-shadow:0 6px 16px rgba(61,107,234,.35)}
+.step:nth-child(2) .num{background:var(--tosca)} .step:nth-child(3) .num{background:var(--purple)}
+.step h3{font-size:1.05rem;margin-bottom:8px}
+.step p{font-size:.93rem;color:var(--muted)}
+
+/* value stack */
+.vstack{max-width:760px;margin:40px auto 0;background:#fff;border-radius:26px;box-shadow:var(--shadow);overflow:hidden;border:1px solid #E9EDF7}
+.vstack table{width:100%;border-collapse:collapse}
+.vstack td{padding:13px 20px;font-size:.95rem;border-bottom:1px solid #F0F3FA;vertical-align:top}
+.vstack tr:last-child td{border-bottom:none}
+.vstack td:last-child{text-align:right;white-space:nowrap;font-weight:700;color:var(--blue-ink)}
+.vstack .vs-item b{display:block;color:var(--blue-ink)}
+.vstack .vs-item span{font-size:.85rem;color:var(--muted)}
+.vstack .vs-total td{background:#F4F7FE;font-weight:800;font-size:1.02rem;color:var(--blue-ink)}
+.vstack .vs-total td:last-child{color:#9AA6BF;text-decoration:line-through;font-size:1.15rem}
+.vs-foot{background:linear-gradient(135deg,var(--orange),#F59E0B);color:#fff;padding:26px 24px;text-align:center}
+.vs-foot .lbl{font-weight:800;font-size:.8rem;letter-spacing:.06em;text-transform:uppercase;opacity:.92}
+.vs-foot .amt{font-size:clamp(2.4rem,6vw,3.3rem);font-weight:800;line-height:1.1;margin:4px 0 2px}
+.vs-foot .sub{font-size:.94rem;opacity:.95}
+.vs-foot .btn{margin-top:16px;background:#fff;color:var(--orange-dark);box-shadow:0 10px 24px rgba(0,0,0,.2)}
+.vs-foot .btn:hover{background:#FFF3EA}
+.vs-disc{margin-top:16px;text-align:center;font-size:.84rem;color:var(--muted);font-style:italic;max-width:660px;margin-left:auto;margin-right:auto}
+
+/* murah comparison */
+.murah-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:38px}
+.mcard{background:#fff;border-radius:20px;padding:24px 20px;box-shadow:var(--shadow-sm);text-align:center;border:1.5px solid #EEF2FA}
+.mcard .em{font-size:2rem;margin-bottom:10px}
+.mcard .amt{font-weight:800;font-size:1.25rem;color:#9AA6BF;margin-bottom:4px}
+.mcard p{font-size:.88rem;color:var(--muted);line-height:1.5}
+.mcard.win{border:2.5px solid var(--orange);background:linear-gradient(170deg,#FFF7F0,#fff);box-shadow:0 18px 42px rgba(232,89,12,.16)}
+.mcard.win .amt{color:var(--orange);font-size:1.6rem}
+.mcard.win p{color:var(--ink);font-weight:600}
+.mcard .rib{display:inline-block;background:var(--orange);color:#fff;font-weight:800;font-size:.68rem;letter-spacing:.06em;padding:4px 11px;border-radius:999px;margin-bottom:10px}
+.perday{margin-top:34px;background:linear-gradient(135deg,var(--blue),var(--purple));color:#fff;border-radius:var(--radius);padding:28px 30px;text-align:center;box-shadow:var(--shadow)}
+.perday b{font-size:1.35rem}
+
+/* trust row */
+.trust-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:38px}
+.tcard{background:#fff;border-radius:18px;padding:22px 20px;box-shadow:var(--shadow-sm);text-align:center}
+.tcard .em{font-size:1.7rem;margin-bottom:9px}
+.tcard b{display:block;color:var(--blue-ink);font-size:.98rem;margin-bottom:5px}
+.tcard p{font-size:.86rem;color:var(--muted);line-height:1.5}
+
+/* pricing waves */
+.waves{display:grid;grid-template-columns:1fr 1.25fr 1fr;gap:18px;align-items:center;margin-top:44px}
+.wave{background:#fff;border-radius:24px;padding:28px 22px;box-shadow:var(--shadow-sm);text-align:center;position:relative}
+.wtag{display:inline-block;font-weight:800;font-size:.78rem;padding:7px 14px;border-radius:999px;margin-bottom:14px}
+.wprice{font-weight:800;font-size:1.6rem;color:var(--blue-ink)}
+.wprice.struck{text-decoration:line-through;color:#9AA6BF}
+.wprice.big{font-size:clamp(2.4rem,5vw,3.1rem);color:var(--orange);line-height:1.1;margin:4px 0 6px}
+.wnormal{font-size:.9rem;color:var(--muted)}
+.wnormal s{color:#9AA6BF}
+.wquota{font-size:.9rem;color:var(--muted);margin:8px 0 10px}
+.wquota b{color:var(--blue-ink)}
+.wstatus{display:inline-block;font-weight:800;font-size:.82rem;padding:8px 16px;border-radius:999px;margin-top:6px}
+.wstatus.red{background:#FDECEF;color:#D6336C}
+.wstatus.purple{background:#F3EDFB;color:#7C5CBF}
+.wave.sold{opacity:.75}
+.wave.soon{border:2px dashed #D9CFF0}
+.wave.current{border:3px solid var(--orange);box-shadow:0 26px 60px rgba(232,89,12,.22);padding:34px 26px;z-index:1}
+.wave.current .btn{width:100%;margin-top:14px}
+.wleft{font-weight:800;font-size:.9rem;color:#D6336C}
+.wave-includes{max-width:760px;margin:36px auto 0;background:#fff;border-radius:24px;padding:32px;box-shadow:var(--shadow-sm)}
+.wave-includes h3{font-size:1.1rem;text-align:center;margin-bottom:18px}
+.wave-includes ul{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:11px}
+.wave-includes li{display:flex;gap:10px;align-items:flex-start;font-size:.95rem}
+.wave-includes .ck{flex:0 0 22px;height:22px;border-radius:50%;background:#E1F7F4;color:#1E9C90;display:grid;place-items:center;font-size:.68rem;font-weight:800;margin-top:2px}
+.wave-includes .urgency{margin-top:20px;text-align:center;font-size:.88rem;font-weight:700;color:#B0538A}
+
+/* faq */
+.faq{max-width:760px;margin:40px auto 0;display:grid;gap:12px}
+.faq details{background:#fff;border-radius:18px;box-shadow:var(--shadow-sm);overflow:hidden}
+.faq summary{cursor:pointer;list-style:none;padding:19px 22px;font-weight:600;font-size:.98rem;color:var(--blue-ink);display:flex;justify-content:space-between;align-items:center;gap:14px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-size:1.4rem;color:var(--blue);font-weight:700;transition:transform .2s}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq .ans{padding:0 22px 20px;color:var(--muted);font-size:.95rem}
+
+/* final cta */
+.final{background:linear-gradient(150deg,#2F55C7,#8F6FD4);color:#fff;border-radius:34px;padding:64px 40px;text-align:center;position:relative;overflow:hidden}
+.final h2{color:#fff;font-size:clamp(1.7rem,3.8vw,2.5rem);margin-bottom:14px}
+.final p{color:#DCE7FF;max-width:600px;margin:0 auto 22px;font-size:1.06rem}
+.final .price-old{color:#AFC6F5}
+.final .price-new{color:#FFE27A}
+.final .btn-primary{background:#fff;color:var(--orange-dark);box-shadow:0 10px 26px rgba(0,0,0,.22)}
+.final .btn-primary:hover{background:#FFF6D8}
+.final .microcopy{color:#CBDBFB}
+
+/* footer */
+footer{background:#23356B;color:#B9C8E6;padding:56px 0 96px;margin-top:72px}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:36px}
+footer h4{color:#fff;font-size:1rem;margin-bottom:14px}
+footer ul{list-style:none;display:grid;gap:9px;font-size:.92rem}
+footer a:hover{color:#fff}
+.foot-disc{margin-top:36px;padding-top:24px;border-top:1px solid rgba(255,255,255,.12);font-size:.85rem;color:#8FA3CC}
+.foot-logo{display:flex;align-items:center;gap:10px;font-weight:800;color:#fff;font-size:1.1rem;margin-bottom:14px}
+
+/* sticky mobile CTA */
+.sticky-cta{position:fixed;left:0;right:0;bottom:0;z-index:70;padding:12px 16px calc(12px + env(safe-area-inset-bottom));background:rgba(255,255,255,.95);backdrop-filter:blur(10px);box-shadow:0 -8px 26px rgba(45,70,140,.14);display:none}
+.sticky-cta .btn{width:100%;padding:15px}
+.sticky-cd{display:flex;align-items:center;justify-content:center;gap:6px;font-size:.78rem;font-weight:800;color:var(--orange-dark);margin-bottom:7px}
+.sticky-cd b{font-variant-numeric:tabular-nums;background:var(--orange-soft);padding:2px 8px;border-radius:6px}
+
+/* sales notification toast */
+.sale-toast{position:fixed;left:16px;bottom:16px;z-index:80;background:#fff;border-radius:16px;box-shadow:0 14px 36px rgba(45,70,140,.22);padding:13px 40px 13px 14px;display:flex;gap:12px;align-items:center;max-width:320px;border:1px solid #E7EDFB;transform:translateY(140%);opacity:0;transition:transform .45s cubic-bezier(.2,.9,.3,1.2),opacity .4s}
+.sale-toast.show{transform:translateY(0);opacity:1}
+.sale-toast .ic{flex:0 0 42px;height:42px;border-radius:12px;background:#E9F8F5;display:grid;place-items:center;font-size:1.2rem}
+.sale-toast b{display:block;font-size:.9rem;color:var(--blue-ink)}
+.sale-toast span{font-size:.8rem;color:var(--muted)}
+.sale-toast .when{display:block;font-size:.72rem;color:#9AA6BF;margin-top:2px}
+.sale-toast .x{position:absolute;top:6px;right:10px;border:none;background:none;color:#9AA6BF;font-size:1rem;cursor:pointer;padding:4px}
+@media (max-width:620px){.sale-toast{left:12px;right:12px;max-width:none;bottom:84px}}
+
+/* reveal animation */
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .55s ease,transform .55s ease}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion: reduce){
+  .reveal{opacity:1;transform:none;transition:none}
+  .fc1,.fc2,.fc3{animation:none}
+  html{scroll-behavior:auto}
+}
+
+@media (max-width:980px){
+  .murah-grid,.trust-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:620px){
+  html{scroll-padding-top:150px}
+  .promo-bar-in{gap:8px;min-height:0}
+  .pb-txt{font-size:.78rem;width:100%;text-align:center;line-height:1.45}
+  .pb-flag{display:none}
+  .cd .u{min-width:60px}
+  .cd .u b{font-size:1.5rem}
+  .price-block{padding:18px}
+  .vstack td{padding:12px 15px;font-size:.9rem}
+  .murah-grid{grid-template-columns:1fr 1fr}
+  .trust-grid{grid-template-columns:1fr 1fr}
+  .perday{padding:24px 20px}
+  .hero .cd-box{max-width:440px}
+}
+
+/* responsive */
+@media (max-width:980px){
+  .hero-grid,.split,.ws-hero{grid-template-columns:1fr;gap:40px}
+  .grid-4,.grid-prod{grid-template-columns:repeat(2,1fr)}
+  .aud-grid{grid-template-columns:repeat(2,1fr)}
+  .support-grid{grid-template-columns:repeat(2,1fr)}
+  .waves{grid-template-columns:1fr;max-width:520px;margin-left:auto;margin-right:auto}
+  .wave.current{order:-1}
+  .foot-grid{grid-template-columns:1fr 1fr}
+  .nav-links{display:none}
+  .nav-toggle{display:block}
+  .nav-links.open{display:flex;position:absolute;top:70px;left:0;right:0;background:#fff;flex-direction:column;padding:20px;gap:16px;box-shadow:var(--shadow);border-bottom:1px solid #E3EDFF}
+  .hero-visual{margin:0 auto;max-width:460px}
+}
+@media (max-width:620px){
+  body{font-size:1.08rem}
+  .sec{padding:52px 0}
+  .doodle{display:none}
+  .hero{padding:44px 0 60px}
+  .btn{padding:14px 20px;font-size:.95rem;line-height:1.3}
+  .hero .btn,.final .btn,.center .btn,.wave.current .btn{width:100%;max-width:440px}
+  .sticky-cta .btn{padding:14px;font-size:1rem}
+  .price-row{gap:10px}
+  .hero-highlight{font-size:.94rem}
+  .badges{gap:8px}
+  .badge{font-size:.8rem;padding:7px 12px}
+  .faq summary{padding:18px 18px;font-size:1rem}
+  .faq .ans{padding:0 18px 18px}
+  .closer{padding:22px 20px;font-size:1.02rem}
+  .nav-toggle{padding:10px 12px;margin-right:-12px}
+  .col-card{padding:24px 20px}
+  .bonus-banner{border-radius:22px}
+  .bonus-inner{border-radius:18px}
+  .grid-4,.grid-prod,.cols-2,.compare,.steps,.support-grid,.waves{grid-template-columns:1fr}
+  .wave.current{order:-1}
+  .wave-includes{padding:26px 20px}
+  .wave-includes ul{grid-template-columns:1fr}
+  .aud-grid{grid-template-columns:1fr 1fr}
+  .foot-grid{grid-template-columns:1fr}
+  .sticky-cta{display:block}
+  body{padding-bottom:76px}
+  .nav .btn{display:none}
+  .bonus-inner{padding:40px 22px}
+  .final{padding:48px 24px}
+  .ws-stack{height:300px}
+  .ws-paper{width:190px}
+}
+</style>
+</head>
+<body>
+
+<!-- ============ PROMO BAR ============ -->
+<div class="topbar-wrap">
+<div class="promo-bar" id="promoBar">
+  <div class="wrap promo-bar-in">
+    <span class="pb-flag">💸</span>
+    <span class="pb-txt"><b>PROMO SPESIAL BUNDA</b> — <b>Rp799.000 → Rp249.000</b> · sisa <b data-left="">11</b> dari 100 slot, lalu naik ke <b>Rp349.000</b></span>
+    <span class="pb-cd">⏳ Harga naik dalam <b data-cd-mini="">--:--:--</b></span>
+    <a href="#pricing" class="pb-btn">Amankan Slot</a>
+  </div>
+</div>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header">
+  <div class="wrap nav">
+    <a href="#" class="logo"><span class="logo-mark">🧩</span> Coding Anak</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Buka menu" aria-expanded="false">☰</button>
+    <nav class="nav-links" id="navLinks" aria-label="Menu utama">
+      <a href="#isi-paket">Isi Paket</a>
+      <a href="#keunggulan">Keunggulan</a>
+      <a href="#bonus">Bonus</a>
+      <a href="#dukungan">Dukungan</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <a href="[[CHECKOUT_LINK_FULL]]" class="btn btn-primary js-cta">Ambil Rp249.000</a>
+  </div>
+</header>
+</div>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <span class="doodle" style="top:8%;left:3%">⭐</span>
+  <span class="doodle" style="top:16%;right:5%">🧩</span>
+  <span class="doodle" style="bottom:10%;left:8%">✏️</span>
+  <span class="doodle" style="bottom:20%;right:12%">📚</span>
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow promo">💸 Promo Spesial Bunda · Hemat 68% · Kuota 100 Orang</span>
+      <h1>1 Paket Coding Anak Lengkap, <span class="hl">Cuma Rp249.000</span> Sekali Bayar</h1>
+      <p class="hero-sub">Harga satu buku aktivitas anak di toko buku, tapi isinya <strong>kurikulum digital lengkap</strong>: modul TK/PAUD sampai Level 3, 96+ worksheet aktivitas, tracing, maze, puzzle, teka-teki silang, Challenge 54 Hari, plus <strong>100 dongeng bersuara</strong> dan <strong>8 games edukasi berlisensi</strong> — sekali bayar, cetak seumur hidup.</p>
+      <div class="hero-highlight"><span>⚠️</span><span><b>Harga segera naik.</b> Promo ini dibatasi <b>100 pembeli</b> — <b>89 slot sudah terisi</b>, sisa <b data-left="">11</b>. Setelah itu harga menjadi <b>Rp349.000</b>.</span></div>
+
+      <div class="price-block">
+        <div class="top">
+          <span class="promo-chip">💸 Harga Promo</span>
+          <span class="save-chip">Hemat Rp550.000</span>
+        </div>
+        <div class="price-row">
+          <span class="price-old">Rp799.000</span>
+          <span class="price-new">Rp249.000</span>
+          <span class="price-tag">SEKALI BAYAR</span>
+        </div>
+        <p class="perunit">Setara <b>Rp682 per hari</b> dipakai setahun, atau kurang dari harga satu buku aktivitas. Sekali beli, milik Bunda selamanya.</p>
+      </div>
+
+      <div class="scarcity">
+        <p class="sc-head">🔥 Kuota promo hampir penuh</p>
+        <p class="sc-num">Terisi <b data-sold="">89</b> dari <b data-quota="">100</b> slot · sisa <b data-left="">11</b></p>
+        <div class="prog" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="89" aria-label="Kuota promo terisi"><i data-bar=""></i></div>
+        <p class="sc-note">Begitu 100 slot penuh <b>atau</b> waktu di bawah habis, harga naik ke <b>Rp349.000</b>.</p>
+      </div>
+
+      <div class="cd-box">
+        <p class="cd-lbl">⏳ Harga Rp249.000 naik ke Rp349.000 dalam</p>
+        <div class="cd" data-cd="" role="timer" aria-live="off">
+          <span class="u"><b data-h="">--</b><i>Jam</i></span>
+          <span class="sep">:</span>
+          <span class="u"><b data-m="">--</b><i>Menit</i></span>
+          <span class="sep">:</span>
+          <span class="u"><b data-s="">--</b><i>Detik</i></span>
+        </div>
+        <p class="cd-note">Hitung mundur <b>3 jam</b> berjalan sejak Bunda membuka halaman ini. Mana pun yang habis lebih dulu — waktu atau <b>11 slot terakhir</b> — harga langsung naik ke <b>Rp349.000</b>.</p>
+      </div>
+      <div class="badges">
+        <span class="badge b1">✅ Sekali Bayar</span>
+        <span class="badge b2">🖨️ Siap Cetak Langsung</span>
+        <span class="badge b3">♾️ Akses Seumur Hidup</span>
+      </div>
+      <a href="[[CHECKOUT_LINK_FULL]]" class="btn btn-primary js-cta">💸 Amankan Harga Promo Rp249.000</a>
+      <p class="microcopy">Sekali bayar · Tanpa langganan · Produk digital, tanpa ongkir. Link download dikirim otomatis setelah pembayaran berhasil.</p>
+    </div>
+
+    <div class="hero-visual">
+      <div class="ws-stack">
+        <div class="ws-paper wsp1">
+          <div class="art" style="background:linear-gradient(135deg,#FFE3C9,#FFD98A)">🧩</div>
+          <div class="ph"></div><div class="ph s"></div>
+        </div>
+        <div class="ws-paper wsp2">
+          <div class="art" style="background:linear-gradient(135deg,#E1F7F4,#B7EFE6)">🖍️</div>
+          <div class="ph"></div><div class="ph s"></div>
+        </div>
+        <div class="ws-paper wsp3">
+          <div class="art" style="background:linear-gradient(135deg,#F3EDFB,#DCCBF7)">🔠</div>
+          <div class="ph"></div><div class="ph s"></div>
+        </div>
+        <span class="float-chip fc1">⭐ 4.9/5 Rating</span>
+        <span class="float-chip fc2">🚀 Challenge 54 Hari</span>
+        <span class="float-chip fc3">🎧 100 Dongeng</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MASALAH ============ -->
+<section class="sec sec-alt">
+  <div class="wrap">
+    <div class="center reveal">
+      <span class="eyebrow">😟 Pernah Merasakan Ini?</span>
+      <h2 class="sec-title">Anak Susah Diajak Belajar Tanpa Drama?</h2>
+    </div>
+    <div class="problem-grid">
+      <div class="problem reveal"><span class="ic">📱</span><p>Anak maunya main HP terus, susah dialihkan ke aktivitas lain.</p></div>
+      <div class="problem reveal"><span class="ic">🔍</span><p>Sulit cari aktivitas belajar yang terstruktur, bukan cuma printable acak.</p></div>
+      <div class="problem reveal"><span class="ic">😩</span><p>Sudah beli worksheet macam-macam, tapi nggak jelas urutan belajarnya.</p></div>
+      <div class="problem reveal"><span class="ic">⏰</span><p>Nggak sempat menyusun jadwal aktivitas belajar harian sendiri.</p></div>
+      <div class="problem reveal"><span class="ic">🧠</span><p>Khawatir nggak bisa bantu anak belajar logika karena bukan orang IT.</p></div>
+      <div class="problem reveal"><span class="ic">🗒️</span><p>Worksheet gratisan kualitasnya asal-asalan dan nggak konsisten.</p></div>
+    </div>
+    <div class="closer reveal">"Daripada gadget cuma dipakai nonton, ubah jadi teman belajar. Dan untuk itu, Bunda tidak perlu keluar ratusan ribu untuk les — cukup sekali Rp249.000 selama promo berlangsung, sebelum harganya naik ke Rp349.000."</div>
+  </div>
+</section>
+
+<!-- ============ SOLUSI ============ -->
+<section class="sec" id="keunggulan">
+  <div class="wrap">
+    <div class="center reveal">
+      <span class="eyebrow">🎁 Solusinya Ada di Sini</span>
+      <h2 class="sec-title">Kenalkan: Paket Coding Anak Lengkap</h2>
+      <p class="sec-sub">Satu paket digital yang membantu anak belajar logika lewat worksheet terstruktur, tracing, permainan, dan dongeng — tanpa layar gadget.</p>
+    </div>
+    <div class="grid-4">
+      <div class="bcard reveal"><div class="em">🚀</div><h3>Belajar Lebih Terstruktur</h3><p>Challenge 54 Hari dengan jadwal jelas, jadi Bunda tidak perlu mikir aktivitas apa hari ini.</p></div>
+      <div class="bcard reveal"><div class="em">📚</div><h3>Materi Lengkap Bertahap</h3><p>Dari TK/PAUD sampai Level 3, disusun berjenjang sesuai usia dan kemampuan anak.</p></div>
+      <div class="bcard reveal"><div class="em">🖨️</div><h3>Siap Cetak Langsung</h3><p>File PDF rapi dan jelas, tinggal print di rumah atau jasa print terdekat.</p></div>
+      <div class="bcard reveal"><div class="em">🎁</div><h3>Bonus Melimpah</h3><p>Tracing, maze, puzzle, crossword, dongeng bersuara, hingga games edukasi berlisensi.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ISI PAKET ============ -->
+<section class="sec sec-alt" id="isi-paket">
+  <div class="wrap">
+    <div class="center reveal">
+      <span class="eyebrow">📦 Isi Paket Lengkap</span>
+      <h2 class="sec-title">Apa Saja yang Akan Didapatkan?</h2>
+      <p class="sec-sub">8 kelompok materi digital dalam satu paket — siap menemani aktivitas belajar si kecil di rumah.</p>
+    </div>
+    <div class="grid-prod">
+      <div class="pcard reveal"><div class="thumb" style="background:linear-gradient(135deg,var(--blue),var(--purple))">📘</div><div class="body"><span class="tag">PRODUK UTAMA</span><h3>Modul TK/PAUD - Level 3</h3><p>Modul utama bertahap, dari pengenalan dasar sampai logika lanjut.</p></div></div>
+      <div class="pcard reveal"><div class="thumb" style="background:linear-gradient(135deg,var(--yellow),#FF9F43)">🎨</div><div class="body"><span class="tag">96+ AKTIVITAS</span><h3>Worksheet Level 1</h3><p>Mewarnai sesuai kode, menghubungkan garis, coding arah &amp; bentuk.</p></div></div>
+      <div class="pcard reveal"><div class="thumb" style="background:linear-gradient(135deg,var(--tosca),#63D3CB)">➕</div><div class="body"><span class="tag">150+ AKTIVITAS</span><h3>Worksheet Level 2 &amp; 3</h3><p>Matematika, logika geometri, koordinat, dan bangun ruang.</p></div></div>
+      <div class="pcard reveal"><div class="thumb" style="background:linear-gradient(135deg,var(--pink),#F7A8C1)">✍️</div><div class="body"><span class="tag">7 SET</span><h3>Paket Tracing Lengkap</h3><p>Huruf, angka, pola, dan bentuk untuk melatih motorik halus.</p></div></div>
+      <div class="pcard reveal"><div class="thumb" style="background:linear-gradient(135deg,var(--purple),#B7A6E8)">🧩</div><div class="body"><span class="tag">5 LEVEL</span><h3>Maze, Puzzle &amp; Crossword</h3><p>Maze mudah sampai extreme, puzzle, dan teka-teki silang.</p></div></div>
+      <div class="pcard reveal"><div class="thumb" style="background:linear-gradient(135deg,#3D6BEA,#45C4B0)">🚀</div><div class="body"><span class="tag">54 HARI</span><h3>Challenge Coding Anak</h3><p>Jadwal aktivitas harian terstruktur, konsisten tanpa tekanan.</p></div></div>
+      <div class="pcard reveal"><div class="thumb" style="background:linear-gradient(135deg,#F6B93B,#E8618C)">🎧</div><div class="body"><span class="tag new">BONUS</span><h3>100 Dongeng Bersuara</h3><p>Koleksi audio cerita, teman menyenangkan sebelum anak tidur.</p></div></div>
+      <div class="pcard reveal"><div class="thumb" style="background:linear-gradient(135deg,#45C4B0,#3D6BEA)">🎮</div><div class="body"><span class="tag new">BONUS</span><h3>8 Games Edukasi</h3><p>Games edukatif resmi berlisensi, aman dan ramah untuk anak.</p></div></div>
+    </div>
+    <div class="center reveal" style="margin-top:34px">
+      <span class="eyebrow" style="background:#E1F7F4;color:#1E9C90">✅ Plus Kemudahan</span>
+      <h3 class="sec-title" style="font-size:clamp(1.4rem,3vw,1.9rem)">Bukan Cuma File — Bunda Juga Dapat Kemudahan Pakainya</h3>
+    </div>
+    <div class="grid-prod" style="grid-template-columns:repeat(2,1fr);max-width:720px;margin:26px auto 0">
+      <div class="pcard reveal"><div class="thumb" style="background:linear-gradient(135deg,var(--tosca),var(--blue))">🖨️</div><div class="body"><span class="tag">SIAP PAKAI</span><h3>Siap Cetak Langsung</h3><p>File PDF sudah rapi dan disusun per kategori — tidak perlu edit apa pun, tinggal print.</p></div></div>
+      <div class="pcard reveal"><div class="thumb" style="background:linear-gradient(135deg,var(--purple),var(--pink))">♾️</div><div class="body"><span class="tag">SEUMUR HIDUP</span><h3>Akses &amp; Cetak Tanpa Batas</h3><p>Sekali beli, Bunda bisa mencetak ulang kapan saja — bahkan untuk adiknya kelak.</p></div></div>
+    </div>
+    <p class="note">Isi dan jumlah lembar dapat bertambah mengikuti update konten dari waktu ke waktu.</p>
+    <div class="center" style="margin-top:26px"><a href="[[CHECKOUT_LINK_FULL]]" class="btn btn-primary js-cta">Ambil Semua Isinya – Rp249.000 Sekali Bayar</a></div>
+  </div>
+</section>
+
+<!-- ============ CHALLENGE 54 HARI ============ -->
+<section class="sec">
+  <div class="wrap split">
+    <div class="reveal">
+      <span class="eyebrow">⭐ Fitur Andalan</span>
+      <h2 class="sec-title">Bukan Sekadar Worksheet, Ini Kebiasaan Belajar 54 Hari</h2>
+      <span class="tagline">"Konsisten sedikit tiap hari, hasilnya besar di akhir."</span>
+      <ul class="check-list">
+        <li><span class="ck">✓</span>Jadwal harian jelas, Bunda tidak perlu mikir aktivitas apa hari ini.</li>
+        <li><span class="ck">✓</span>Anak belajar bertahap tanpa merasa terbebani.</li>
+        <li><span class="ck">✓</span>Bunda tinggal ikuti, tidak perlu menyusun kurikulum sendiri.</li>
+        <li><span class="ck">✓</span>Progres terlihat jelas, bikin anak termotivasi menyelesaikan.</li>
+        <li><span class="ck">✓</span>Cocok jadi kebiasaan pengganti waktu main gadget.</li>
+      </ul>
+    </div>
+    <div class="reveal">
+      <div class="ws-paper" style="position:static;width:100%;max-width:320px;margin:0 auto">
+        <div style="font-weight:700;color:var(--blue-ink);margin-bottom:2px">🖍️ Aktivitas Hari ke-12</div>
+        <div style="font-size:.82rem;color:var(--muted);margin-bottom:16px">Level 1 · Coding Arah &amp; Bentuk</div>
+        <div style="display:grid;grid-template-columns:repeat(6,1fr);gap:6px;margin-bottom:16px">
+          <div style="aspect-ratio:1;border-radius:6px;background:var(--orange)"></div><div style="aspect-ratio:1;border-radius:6px;background:var(--orange)"></div><div style="aspect-ratio:1;border-radius:6px;background:#EAF0FB"></div><div style="aspect-ratio:1;border-radius:6px;background:#EAF0FB"></div><div style="aspect-ratio:1;border-radius:6px;background:#EAF0FB"></div><div style="aspect-ratio:1;border-radius:6px;background:#EAF0FB"></div>
+          <div style="aspect-ratio:1;border-radius:6px;background:#EAF0FB"></div><div style="aspect-ratio:1;border-radius:6px;background:var(--orange)"></div><div style="aspect-ratio:1;border-radius:6px;background:var(--orange)"></div><div style="aspect-ratio:1;border-radius:6px;background:#EAF0FB"></div><div style="aspect-ratio:1;border-radius:6px;background:#EAF0FB"></div><div style="aspect-ratio:1;border-radius:6px;background:#EAF0FB"></div>
+          <div style="aspect-ratio:1;border-radius:6px;background:#EAF0FB"></div><div style="aspect-ratio:1;border-radius:6px;background:#EAF0FB"></div><div style="aspect-ratio:1;border-radius:6px;background:var(--orange)"></div><div style="aspect-ratio:1;border-radius:6px;background:var(--orange)"></div><div style="aspect-ratio:1;border-radius:6px;background:var(--orange)"></div><div style="aspect-ratio:1;border-radius:6px;background:var(--orange);display:grid;place-items:center;font-size:.6rem">🏁</div>
+        </div>
+        <div style="display:flex;justify-content:space-between;font-size:.75rem;color:var(--muted);margin-bottom:6px;font-weight:600"><span>Progres Challenge</span><span>Hari 12/54</span></div>
+        <div style="height:8px;background:#EAF0FB;border-radius:10px;overflow:hidden"><div style="height:100%;width:22%;background:linear-gradient(90deg,var(--tosca),var(--blue));border-radius:10px"></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BONUS TRACING ============ -->
+<section class="sec" style="background:linear-gradient(180deg,#FFFDF6,#F1F7FF)">
+  <div class="wrap split">
+    <div class="reveal">
+      <div class="spot-box" style="background:linear-gradient(135deg,var(--pink),var(--yellow))">✍️</div>
+    </div>
+    <div class="reveal">
+      <span class="eyebrow" style="background:#FFE9F1;color:#D14C82">🎨 Bonus Favorit Bunda</span>
+      <h2 class="sec-title">Sambil Belajar Coding, Motorik Halus Anak Ikut Terlatih</h2>
+      <span class="tagline">"Latihan tracing yang bikin tangan mungil siap menulis."</span>
+      <ul class="check-list">
+        <li><span class="ck">✓</span>Tracing huruf kapital &amp; huruf kecil.</li>
+        <li><span class="ck">✓</span>Tracing angka dan pola berulang.</li>
+        <li><span class="ck">✓</span>Disusun bertahap dari mudah ke sulit.</li>
+        <li><span class="ck">✓</span>Bisa dicetak ulang kapan saja sesuai kebutuhan.</li>
+        <li><span class="ck">✓</span>Melengkapi persiapan pra-menulis sebelum masuk SD.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MANFAAT ============ -->
+<section class="sec sec-alt">
+  <div class="wrap">
+    <div class="center reveal">
+      <span class="eyebrow">💙 Manfaat untuk Keluarga</span>
+      <h2 class="sec-title">Satu Paket, Manfaat untuk Anak dan Bunda</h2>
+    </div>
+    <div class="cols-2">
+      <div class="col-card col-anak reveal">
+        <h3><span class="ic">🧒</span>Untuk Anak</h3>
+        <ul class="check-list">
+          <li><span class="ck">✓</span>Belajar terasa lebih menyenangkan tanpa gadget.</li>
+          <li><span class="ck">✓</span>Kenal banyak jenis aktivitas dalam satu paket.</li>
+          <li><span class="ck">✓</span>Motorik halus terlatih lewat tracing.</li>
+          <li><span class="ck">✓</span>Terbentuk kebiasaan belajar lewat Challenge 54 Hari.</li>
+          <li><span class="ck">✓</span>Bisa diulang sesuai kecepatan belajar anak sendiri.</li>
+        </ul>
+      </div>
+      <div class="col-card col-ortu reveal">
+        <h3><span class="ic">👩‍👧</span>Untuk Bunda</h3>
+        <ul class="check-list">
+          <li><span class="ck">✓</span>Tidak perlu mencari bahan belajar satu per satu.</li>
+          <li><span class="ck">✓</span>Tinggal cetak, langsung bisa dipakai.</li>
+          <li><span class="ck">✓</span>Tidak perlu paham coding untuk mendampingi anak.</li>
+          <li><span class="ck">✓</span>Lebih hemat dibanding ikut les coding offline.</li>
+          <li><span class="ck">✓</span>Akses &amp; cetak ulang seumur hidup.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BONUS BANNER ============ -->
+<section class="sec" id="bonus">
+  <div class="wrap">
+    <div class="bonus-banner reveal">
+      <div class="bonus-inner">
+        <div class="ws-hero">
+          <div>
+            <span class="eyebrow" style="background:#FFEFC2;color:#8A6400">🎁 Bonus Spesial</span>
+            <h2 class="sec-title">Bonus Spesial: Tracing, Maze, Puzzle &amp; Lebih Banyak Lagi</h2>
+            <p class="sec-sub">Melengkapi modul utama dengan aktivitas seru yang bisa dicetak dan digunakan berulang di rumah.</p>
+            <div class="ws-cats">
+              <div class="ws-cat">✍️ Tracing Huruf &amp; Angka</div>
+              <div class="ws-cat">🧩 Maze 5 Level</div>
+              <div class="ws-cat">🧶 Puzzle</div>
+              <div class="ws-cat">🔠 Teka-teki Silang</div>
+              <div class="ws-cat">🎨 Trace &amp; Color</div>
+              <div class="ws-cat">📏 Tracing Pola &amp; Bentuk</div>
+              <div class="ws-cat">🎧 100 Dongeng Bersuara</div>
+              <div class="ws-cat">🎮 8 Games Edukasi</div>
+            </div>
+            <span class="ws-label">✅ Semua bonus ini termasuk dalam Paket Coding Anak Lengkap.</span>
+          </div>
+          <div class="ws-visual">
+            <div class="ws-stack" style="height:280px">
+              <div class="ws-paper wsp1"><div class="art" style="background:linear-gradient(135deg,#DCCBF7,#B7A6E8)">🧩</div><div class="ph"></div><div class="ph s"></div></div>
+              <div class="ws-paper wsp2"><div class="art" style="background:linear-gradient(135deg,#FFE3C9,#F6B93B)">✍️</div><div class="ph"></div><div class="ph s"></div></div>
+              <div class="ws-paper wsp3"><div class="art" style="background:linear-gradient(135deg,#B7EFE6,#45C4B0)">🔠</div><div class="ph"></div><div class="ph s"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DUKUNGAN ============ -->
+<section class="sec sec-alt" id="dukungan">
+  <div class="wrap">
+    <div class="center reveal">
+      <span class="eyebrow">🤝 Tidak Dilepas Sendirian</span>
+      <h2 class="sec-title">Ada Dukungan Lengkap Setelah Pembelian</h2>
+      <p class="sec-sub">Bunda tidak hanya menerima file, tapi juga kemudahan supaya bisa langsung dipakai tanpa bingung.</p>
+    </div>
+    <div class="support-grid">
+      <div class="scard reveal"><div class="ic" style="background:#EDF2FF;color:#3D6BEA">🖨️</div><h3>Panduan Cara Cetak</h3><p>Panduan ukuran kertas dan pengaturan print supaya hasil cetaknya rapi.</p></div>
+      <div class="scard reveal"><div class="ic" style="background:#E9F8F5;color:#2A9D8F">💬</div><h3>WA Support</h3><p>Ada kendala akses file? Tim support siap membantu lewat WhatsApp.</p></div>
+      <div class="scard reveal"><div class="ic" style="background:#FFF6E3;color:#B98600">📘</div><h3>Panduan Challenge 54 Hari</h3><p>Cara memulai dan tips supaya tetap konsisten sampai hari terakhir.</p></div>
+      <div class="scard reveal"><div class="ic" style="background:#F3EDFB;color:#7C5CBF">🔄</div><h3>Update Konten Berkala</h3><p>Worksheet dan bonus baru ditambahkan dari waktu ke waktu tanpa biaya tambahan.</p></div>
+      <div class="scard reveal"><div class="ic" style="background:#FDEEF4;color:#E8618C">↩️</div><h3>Garansi Refund 1×24 Jam</h3><p>Kalau file rusak, tidak bisa diakses, atau tidak sesuai deskripsi.</p></div>
+      <div class="scard reveal"><div class="ic" style="background:#E9F8F5;color:#1E9C90">📩</div><h3>Pengiriman Otomatis</h3><p>Link download langsung dikirim ke email setelah pembayaran terverifikasi.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SIAPA YANG COCOK ============ -->
+<section class="sec">
+  <div class="wrap">
+    <div class="center reveal">
+      <span class="eyebrow">🙋 Cocok untuk Siapa?</span>
+      <h2 class="sec-title">Paket Ini Cocok untuk Siapa Saja?</h2>
+    </div>
+    <div class="aud-grid">
+      <div class="acard reveal"><div class="em">👩‍👧</div><p>Bunda yang cari kegiatan belajar tanpa gadget</p></div>
+      <div class="acard reveal"><div class="em">👩‍🏫</div><p>Guru TK/PAUD yang butuh bahan ajar tambahan</p></div>
+      <div class="acard reveal"><div class="em">🏠</div><p>Praktisi homeschooling</p></div>
+      <div class="acard reveal"><div class="em">🧒</div><p>Anak usia 3-9 tahun yang mulai belajar logika</p></div>
+      <div class="acard reveal"><div class="em">🎒</div><p>Orang tua yang ingin anak siap masuk SD</p></div>
+      <div class="acard reveal"><div class="em">🏫</div><p>Pemilik bimbel atau PAUD kecil untuk bahan aktivitas</p></div>
+      <div class="acard reveal"><div class="em">👨‍👩‍👧‍👦</div><p>Bunda dengan lebih dari satu anak (bisa dicetak berkali-kali)</p></div>
+      <div class="acard reveal"><div class="em">📚</div><p>Siapa pun yang ingin anak belajar konsisten 54 hari</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PERBANDINGAN ============ -->
+<section class="sec sec-alt">
+  <div class="wrap">
+    <div class="center reveal">
+      <span class="eyebrow">⚖️ Bandingkan Sendiri</span>
+      <h2 class="sec-title">Lebih Praktis dalam Satu Paket</h2>
+    </div>
+    <div class="compare">
+      <div class="cmp cmp-bad reveal">
+        <h3>😓 Beli Worksheet Terpisah</h3>
+        <ul>
+          <li><span class="m">✕</span>Harus mencari materi sendiri di banyak tempat.</li>
+          <li><span class="m">✕</span>Nggak jelas urutan belajar dari mana harus mulai.</li>
+          <li><span class="m">✕</span>Sering dapat kualitas cetak yang asal-asalan.</li>
+          <li><span class="m">✕</span>Tidak ada jadwal atau challenge harian.</li>
+          <li><span class="m">✕</span>Tidak ada bonus dongeng atau games.</li>
+          <li><span class="m">✕</span>Tidak ada panduan atau tempat bertanya.</li>
+          <li><span class="m">✕</span>Butuh waktu lama untuk menyortir file.</li>
+        </ul>
+      </div>
+      <div class="cmp cmp-good reveal">
+        <h3>🎉 Paket Coding Anak Lengkap</h3>
+        <ul>
+          <li><span class="m">✓</span>130+ file materi dalam satu paket rapi.</li>
+          <li><span class="m">✓</span>Tersusun bertahap dari TK/PAUD sampai Level 3.</li>
+          <li><span class="m">✓</span>Kualitas worksheet rapi dan jelas, siap cetak.</li>
+          <li><span class="m">✓</span>Challenge 54 Hari yang terstruktur.</li>
+          <li><span class="m">✓</span>Bonus 100 dongeng bersuara + 8 games edukasi.</li>
+          <li><span class="m">✓</span>Panduan pakai &amp; WA support.</li>
+          <li><span class="m">✓</span>Langsung siap dipakai setelah diterima.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CARA MENDAPATKAN ============ -->
+<section class="sec">
+  <div class="wrap">
+    <div class="center reveal">
+      <span class="eyebrow">🛤️ Prosesnya Mudah</span>
+      <h2 class="sec-title">Hanya 3 Langkah untuk Mulai</h2>
+    </div>
+    <div class="steps">
+      <div class="step reveal"><div class="num">1</div><h3>Pilih &amp; Checkout Paket</h3><p>Klik tombol "Ambil Sekarang" di halaman ini untuk menuju pembayaran.</p></div>
+      <div class="step reveal"><div class="num">2</div><h3>File Dikirim ke Email</h3><p>Link download otomatis terkirim setelah pembayaran terverifikasi.</p></div>
+      <div class="step reveal"><div class="num">3</div><h3>Print &amp; Mulai Challenge 54 Hari</h3><p>Cetak worksheet pertama dan mulai aktivitas bersama si kecil.</p></div>
+    </div>
+    <p class="note">Waktu pengiriman link download mengikuti proses verifikasi pembayaran yang berlaku.</p>
+  </div>
+</section>
+
+<!-- ============ VALUE STACK ============ -->
+<section class="sec sec-alt" id="nilai">
+  <div class="wrap">
+    <div class="center reveal">
+      <span class="eyebrow promo">🧮 Hitung Sendiri Nilainya</span>
+      <h2 class="sec-title">Kalau Dicari &amp; Dibuat Sendiri, Isinya Bernilai Rp1.153.000+</h2>
+      <p class="sec-sub">Ini bukan angka karangan untuk gaya-gayaan. Ini estimasi biaya wajar kalau Bunda harus mencari, membeli, atau menyusun setiap bagiannya satu per satu.</p>
+    </div>
+
+    <div class="vstack reveal">
+      <table>
+        <tbody>
+          <tr><td class="vs-item"><b>Modul Utama TK/PAUD - Level 3</b><span>Setara kursus logika terstruktur bertahap</span></td><td>Rp299.000</td></tr>
+          <tr><td class="vs-item"><b>96+ Worksheet Aktivitas Level 1</b><span>Mewarnai, coding arah &amp; bentuk, menyusun kata</span></td><td>Rp89.000</td></tr>
+          <tr><td class="vs-item"><b>150+ Worksheet Level 2 &amp; 3</b><span>Matematika, logika geometri, koordinat, bangun ruang</span></td><td>Rp199.000</td></tr>
+          <tr><td class="vs-item"><b>Paket Tracing Lengkap</b><span>Huruf, angka, pola &amp; bentuk untuk motorik halus</span></td><td>Rp75.000</td></tr>
+          <tr><td class="vs-item"><b>Maze 5 Level + Puzzle + Crossword</b><span>Melatih problem-solving bertahap</span></td><td>Rp65.000</td></tr>
+          <tr><td class="vs-item"><b>Challenge 54 Hari</b><span>Panduan aktivitas harian terstruktur</span></td><td>Rp99.000</td></tr>
+          <tr><td class="vs-item"><b>100 Dongeng Bersuara</b><span>Koleksi audio cerita sebelum tidur</span></td><td>Rp79.000</td></tr>
+          <tr><td class="vs-item"><b>8 Games Edukasi Berlisensi</b><span>Games edukatif resmi, aman untuk anak</span></td><td>Rp149.000</td></tr>
+          <tr><td class="vs-item"><b>Akses &amp; Cetak Seumur Hidup</b><span>Cetak ulang tanpa batas, kapan saja</span></td><td>Rp99.000</td></tr>
+          <tr class="vs-total"><td>Total nilai kalau dicari terpisah</td><td>Rp1.153.000</td></tr>
+        </tbody>
+      </table>
+      <div class="vs-foot">
+        <p class="lbl">💸 Harga Promo Sekarang</p>
+        <p class="amt">Rp249.000</p>
+        <p class="sub">Sekali bayar untuk semuanya — hemat lebih dari 78% dari total nilai di atas.</p>
+        <a href="[[CHECKOUT_LINK_FULL]]" class="btn js-cta">🛒 Ambil Sekarang Sebelum Harga Naik</a>
+      </div>
+    </div>
+    <p class="vs-disc">Angka di atas adalah <em>estimasi nilai wajar</em> bila setiap komponen dicari, dibeli, atau dibuat sendiri — bukan harga jual masing-masing produk secara terpisah. Harga normal paket ini adalah Rp799.000.</p>
+  </div>
+</section>
+
+<!-- ============ SEMURAH APA ============ -->
+<section class="sec">
+  <div class="wrap">
+    <div class="center reveal">
+      <span class="eyebrow promo">💸 Coba Bandingkan</span>
+      <h2 class="sec-title">Rp249.000 Itu Uang yang Biasanya Habis dalam Sehari</h2>
+      <p class="sec-sub">Bedanya, yang satu ini tidak habis. Sekali beli, dipakai anak Bunda bertahun-tahun.</p>
+    </div>
+    <div class="murah-grid">
+      <div class="mcard reveal"><div class="em">📕</div><div class="amt">± Rp65.000</div><p>1 buku aktivitas anak di toko buku — selesai dalam 2 minggu, lalu dianggurkan.</p></div>
+      <div class="mcard reveal"><div class="em">👩‍🏫</div><div class="amt">± Rp150.000</div><p>1 jam les privat coding — sekali pertemuan, minggu depan bayar lagi.</p></div>
+      <div class="mcard reveal"><div class="em">🍔</div><div class="amt">± Rp45.000</div><p>1x makan di resto cepat saji — habis dalam 15 menit, tidak berbekas.</p></div>
+      <div class="mcard win reveal"><span class="rib">💸 PILIHAN TERBAIK</span><div class="em">🎒</div><div class="amt">Rp249.000</div><p>Modul lengkap TK/PAUD-Level 3 + Challenge 54 Hari + bonus melimpah. Sekali bayar, dipakai selamanya.</p></div>
+    </div>
+    <div class="perday reveal">
+      Dipakai setahun saja, biayanya <b>± Rp682 per hari</b> — lebih murah dari sebutir permen. Dan setelah setahun, aksesnya tetap milik Bunda.
+    </div>
+    <div class="center" style="margin-top:26px"><a href="[[CHECKOUT_LINK_FULL]]" class="btn btn-primary js-cta">💸 Ya, Saya Ambil Harga Promo Rp249.000</a></div>
+  </div>
+</section>
+
+<!-- ============ KENAPA AMAN DIBELI ============ -->
+<section class="sec sec-alt">
+  <div class="wrap">
+    <div class="center reveal">
+      <span class="eyebrow">🛡️ Biar Tenang Sebelum Bayar</span>
+      <h2 class="sec-title">Tidak Ada yang Disembunyikan di Sini</h2>
+    </div>
+    <div class="trust-grid">
+      <div class="tcard reveal"><div class="em">🔓</div><b>Tanpa Langganan</b><p>Bayar satu kali. Tidak ada tagihan bulanan atau biaya perpanjangan.</p></div>
+      <div class="tcard reveal"><div class="em">🖨️</div><b>Bisa Langsung Dicetak</b><p>File rapi dan jelas, siap pakai begitu diterima.</p></div>
+      <div class="tcard reveal"><div class="em">💬</div><b>Ada Orangnya</b><p>WA support siap membantu kalau ada kendala akses atau pertanyaan produk.</p></div>
+      <div class="tcard reveal"><div class="em">↩️</div><b>Garansi Refund 1×24 Jam</b><p>Kalau file rusak, tidak bisa diakses, atau tidak sesuai deskripsi.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRICING GELOMBANG ============ -->
+<section class="sec sec-alt" id="pricing">
+  <div class="wrap">
+    <div class="center reveal">
+      <span class="eyebrow promo">💸 Harga Promo</span>
+      <h2 class="sec-title">Ada Dua Hal yang Sedang Berjalan Mundur</h2>
+      <p class="sec-sub">Pertama, hitung mundur 3 jam. Kedua, sisa <b>11 slot</b> dari kuota 100 orang. Mana pun yang habis lebih dulu, harga Rp249.000 berakhir di situ dan naik ke <b>Rp349.000</b>.</p>
+      <div style="display:flex;justify-content:center;margin-top:28px">
+        <div class="cd-box">
+          <p class="cd-lbl">⏳ Sisa waktu harga Rp249.000</p>
+          <div class="cd" data-cd="" role="timer" aria-live="off">
+            <span class="u"><b data-h="">--</b><i>Jam</i></span>
+            <span class="sep">:</span>
+            <span class="u"><b data-m="">--</b><i>Menit</i></span>
+            <span class="sep">:</span>
+            <span class="u"><b data-s="">--</b><i>Detik</i></span>
+          </div>
+          <p class="cd-note">Hitung mundur <b>3 jam</b>. Kuota 100 orang berjalan terpisah dan <b>tidak</b> ikut direset.</p>
+        </div>
+      </div>
+    </div>
+    <div class="waves">
+      <div class="wave sold reveal">
+        <span class="wtag" style="background:#EEF1F7;color:#8A94A6">Gelombang 1</span>
+        <div class="wprice struck">Rp149.000</div>
+        <p class="wquota">Kuota 50 · Terjual 50</p>
+        <span class="wstatus red">❌ SOLD OUT</span>
+      </div>
+      <div class="wave current reveal">
+        <span class="wtag" style="background:#FFF1E6;color:#AD3E02">💸 Gelombang 2 — Harga Promo</span>
+        <div class="wnormal">Harga Normal: <s>Rp799.000</s> · Nilai isi <s>Rp1.153.000</s></div>
+        <div class="wprice big">Rp249.000</div>
+        <p class="wnormal" style="margin:-2px 0 8px">≈ Rp682 per hari selama setahun · sekali bayar, selamanya</p>
+        <p class="wquota">Kuota <b id="w2quota">100</b> · Terjual <b id="w2sold">89</b> · Sisa <b id="w2left">11</b></p>
+        <div class="prog" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="89" aria-label="Kuota terjual gelombang 2"><i id="w2bar"></i></div>
+        <p class="wleft" id="w2note">⚡ Kuota hampir habis — sisa 11 slot lagi!</p>
+        <a href="[[CHECKOUT_LINK_FULL]]" class="btn btn-primary js-cta">💸 Amankan 1 dari 11 Slot Terakhir</a>
+        <p class="microcopy">Sekali bayar · Tanpa langganan · Produk digital, tanpa ongkir.</p>
+      </div>
+      <div class="wave soon reveal">
+        <span class="wtag" style="background:#F3EDFB;color:#7C5CBF">Gelombang 3 — Harga Berikutnya</span>
+        <div class="wprice struck">Rp349.000</div>
+        <p class="wquota">Kuota 200</p>
+        <span class="wstatus purple">⏭️ HARGA NAIK KE SINI</span>
+      </div>
+    </div>
+    <div class="wave-includes reveal">
+      <h3>Apa pun gelombangnya, Bunda mendapatkan semuanya:</h3>
+      <ul>
+        <li><span class="ck">✓</span>Modul TK/PAUD sampai Level 3.</li>
+        <li><span class="ck">✓</span>500+ worksheet aktivitas.</li>
+        <li><span class="ck">✓</span>Paket tracing lengkap.</li>
+        <li><span class="ck">✓</span>Maze 5 level, puzzle &amp; crossword.</li>
+        <li><span class="ck">✓</span>Challenge 54 Hari terstruktur.</li>
+        <li><span class="ck">✓</span>100 Dongeng Bersuara.</li>
+        <li><span class="ck">✓</span>8 Games Edukasi berlisensi.</li>
+        <li><span class="ck">✓</span>Akses &amp; cetak seumur hidup.</li>
+        <li><span class="ck">✓</span>Panduan cara cetak &amp; pakai.</li>
+        <li><span class="ck">✓</span>WA support.</li>
+        <li><span class="ck">✓</span>Garansi refund 1×24 jam.</li>
+        <li><span class="ck">✓</span>Update konten berkala.</li>
+      </ul>
+      <p class="urgency">⏳ Begitu <b>11 slot terakhir</b> terisi atau hitung mundur 3 jam habis, harga naik ke <b>Rp349.000</b> — dan isi paketnya tetap sama persis.</p>
+      <div class="center"><span class="mini-urgent">⏱️ Harga naik ke Rp349.000 dalam: <b data-cd-mini="">--:--:--</b></span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="sec sec-alt" id="faq">
+  <div class="wrap">
+    <div class="center reveal">
+      <span class="eyebrow">❓ Masih Ragu?</span>
+      <h2 class="sec-title">Pertanyaan yang Sering Ditanyakan</h2>
+    </div>
+    <div class="faq reveal">
+      <details open=""><summary>Sampai kapan promo Rp249.000 ini berlaku?</summary><p class="ans">Ada dua batas yang berjalan bersamaan. Pertama, <strong>hitung mundur 3 jam</strong> yang mulai berjalan saat Bunda membuka halaman ini. Kedua, <strong>kuota 100 pembeli</strong> — saat ini 89 slot sudah terisi, sisa 11. Mana pun yang habis lebih dulu, harga langsung naik ke <strong>Rp349.000</strong>.</p></details>
+      <details><summary>Apakah ini produk digital atau fisik?</summary><p class="ans">Produk digital berformat PDF (dan audio untuk dongeng). Setelah pembayaran berhasil, Bunda bisa langsung download dan cetak sendiri di rumah, kapan pun dibutuhkan tanpa batasan jumlah cetak.</p></details>
+      <details><summary>Cocok untuk usia berapa?</summary><p class="ans">Dirancang untuk anak usia 3-9 tahun, mulai jenjang TK/PAUD hingga Level 3. Materi bisa Bunda sesuaikan dengan kemampuan dan usia si kecil.</p></details>
+      <details><summary>Apakah Bunda perlu bisa coding untuk mendampingi anak?</summary><p class="ans">Tidak perlu. Semua worksheet dilengkapi instruksi bergambar yang mudah diikuti, jadi Bunda tetap bisa mendampingi anak walau tidak punya latar belakang coding.</p></details>
+      <details><summary>Apakah ada biaya bulanan atau langganan?</summary><p class="ans">Tidak ada. Pembayaran dilakukan satu kali, dan akses produk menjadi milik Bunda selamanya. Tidak ada langganan bulanan atau biaya perpanjangan.</p></details>
+      <details><summary>Kenapa harganya bisa semurah ini?</summary><p class="ans">Karena produknya digital: tidak ada biaya cetak masal, stok, packing, maupun ongkir dari kami. Harga Rp249.000 adalah harga promo — harga normalnya Rp799.000, dan harga berikutnya setelah kuota ini habis adalah Rp349.000.</p></details>
+      <details><summary>Apakah games edukasinya aman untuk anak?</summary><p class="ans">Ya, 8 games edukasi dalam paket ini berlisensi resmi dan dirancang khusus untuk anak-anak, sehingga aman dan bebas konten yang tidak sesuai.</p></details>
+      <details><summary>Apakah worksheet dapat dicetak berkali-kali?</summary><p class="ans">Bisa. Worksheet berbentuk file PDF yang dapat dicetak ulang sesuai kebutuhan, bahkan untuk adiknya kelak, tanpa batasan jumlah cetak.</p></details>
+      <details><summary>Bagaimana cara mengakses produk setelah pembayaran?</summary><p class="ans">Link download akan langsung dikirim melalui email atau tampil di halaman terima kasih setelah pembayaran terverifikasi. Akses bisa Bunda buka kembali kapan saja.</p></details>
+      <details><summary>Apakah ada garansi jika filenya bermasalah?</summary><p class="ans">Ada. Jika file rusak, tidak bisa diakses, atau tidak sesuai deskripsi, hubungi admin maksimal 1×24 jam setelah pembelian untuk penggantian file atau pengembalian dana.</p></details>
+      <details><summary>Apakah cocok dipakai oleh guru atau bimbel?</summary><p class="ans">Cocok. Paket ini bisa menjadi bahan pendukung untuk guru PAUD, TK, tutor, hingga pemilik bimbingan belajar kecil.</p></details>
+      <details><summary>Bagaimana jika saya mengalami kendala akses?</summary><p class="ans">Silakan hubungi WA support yang tertera di halaman ini. Tim kami siap membantu menyelesaikan kendala akses Bunda.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FINAL CTA ============ -->
+<section class="sec">
+  <div class="wrap">
+    <div class="final reveal">
+      <span class="doodle" style="top:14%;left:6%;opacity:.35">⭐</span>
+      <span class="doodle" style="bottom:16%;right:8%;opacity:.35">🧩</span>
+      <h2>💸 Promo Spesial — Rp249.000 untuk 11 Orang Terakhir</h2>
+      <p>Modul lengkap TK/PAUD-Level 3, Challenge 54 Hari, tracing, maze, puzzle, 100 dongeng bersuara, dan 8 games edukasi. Nilai isinya Rp1.153.000, harga normalnya Rp799.000 — sekarang cukup Rp249.000, dan jadi milik Bunda selamanya. Setelah 11 slot terakhir terisi, harganya Rp349.000.</p>
+      <div class="price-row" style="justify-content:center">
+        <span class="price-old">Rp799.000</span>
+        <span class="price-new">Rp249.000</span>
+      </div>
+      <div style="display:flex;justify-content:center;margin:8px 0 22px">
+        <div class="cd-box on-dark">
+          <p class="cd-lbl">⏳ Harga naik ke Rp349.000 dalam</p>
+          <div class="cd" data-cd="" role="timer" aria-live="off">
+            <span class="u"><b data-h="">--</b><i>Jam</i></span>
+            <span class="sep">:</span>
+            <span class="u"><b data-m="">--</b><i>Menit</i></span>
+            <span class="sep">:</span>
+            <span class="u"><b data-s="">--</b><i>Detik</i></span>
+          </div>
+          <p class="cd-note">Hitung mundur 3 jam · sisa <b data-left="">11</b> dari 100 slot.</p>
+        </div>
+      </div>
+      <a href="[[CHECKOUT_LINK_FULL]]" class="btn btn-primary js-cta">🎒 Ambil Harga Promo Rp249.000</a>
+      <p class="microcopy">Sekali bayar • Produk digital • Modul TK/PAUD-Level 3 • Challenge 54 Hari • Bonus tracing, maze, puzzle • 100 dongeng bersuara • 8 games edukasi • Garansi refund 1×24 jam • WA support</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-logo"><span class="logo-mark" style="background:rgba(255,255,255,.1)">🧩</span> Coding Anak</div>
+        <p style="font-size:.92rem;max-width:320px">Paket worksheet coding unplugged untuk anak Indonesia — media belajar digital yang menyenangkan, tanpa gadget.</p>
+      </div>
+      <div>
+        <h4>Bantuan</h4>
+        <ul>
+          <li><a href="[[WHATSAPP]]" class="js-wa">📞 Customer Service (WhatsApp)</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#pricing">Harga</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Informasi</h4>
+        <ul>
+          <li><a href="#">Kebijakan Privasi</a></li>
+          <li><a href="#">Syarat &amp; Ketentuan</a></li>
+          <li><a href="#">Kebijakan Refund</a></li>
+          <li><a href="#">Disclaimer</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-disc">
+      <p><strong>Disclaimer:</strong> Produk ini merupakan media belajar tambahan dan bukan pengganti pembelajaran formal, pendampingan orang tua, guru, atau tenaga pendidikan. Hasil belajar setiap anak dapat berbeda.</p>
+      <p style="margin-top:12px">© 2026 Coding Anak — by Dyca Creative. Seluruh hak cipta dilindungi.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Sticky bottom CTA (mobile) -->
+<div class="sticky-cta">
+  <p class="sticky-cd">🔥 Sisa <b data-left="">11</b> slot · naik ke Rp349.000 dalam <b data-cd-mini="">--:--:--</b></p>
+  <a href="[[CHECKOUT_LINK_FULL]]" class="btn btn-primary js-cta">Ambil Rp249.000 — Sekali Bayar</a>
+</div>
+
+<script>
+
+/* ================== KONFIGURASI — CUKUP UBAH DI SINI ================== */
+const CHECKOUT_URL = "[[CHECKOUT_LINK_FULL]]";
+const WHATSAPP_URL  = "[[WHATSAPP]]";
+
+/* ---------- PROMO ----------
+promoAktif   : set false untuk mematikan seluruh elemen promo (bar atas + countdown).
+tanggalAkhir : hari TERAKHIR promo berjalan (format "YYYY-MM-DD", waktu lokal).
+               Setelah lewat tanggal ini, promo bar & countdown disembunyikan otomatis.
+               Kosongkan ("") bila promo dijalankan tanpa tanggal akhir.
+
+mode         : "durasi"  → hitung mundur per pengunjung (default).
+                           Sisa waktu disimpan di perangkat pembeli, jadi TIDAK ikut
+                           ter-reset setiap kali halaman di-refresh.
+               "deadline" → hitung mundur ke satu tanggal & jam pasti untuk semua orang.
+                           Isi kolom deadline di bawah, contoh: "2026-09-30T23:59:59".
+durasiJam    : panjang hitung mundur untuk mode "durasi". */
+const PROMO = {
+  promoAktif: true,
+  tanggalAkhir: "",
+  mode: "durasi",
+  durasiJam: 3,
+  deadline: ""
+};
+
+/* ---------- HARGA ----------
+hargaSekarang  : harga promo yang sedang berjalan.
+hargaBerikutnya: harga setelah kuota habis atau hitung mundur selesai. */
+const HARGA = { sekarang: "Rp249.000", berikutnya: "Rp349.000" };
+/* =========================================================================== */
+
+/* ---------- NOTIFIKASI PENJUALAN (social proof) ----------
+PENTING: isi HANYA dengan data pembelian yang benar-benar terjadi
+(nama boleh disingkat demi privasi). Jangan membuat data pembeli palsu.
+Format: { nama:"Bunda R.", kota:"Surabaya", waktu:"2 jam lalu" }
+Selama array kosong, notifikasi tidak akan muncul. */
+const SALES_NOTIF = {
+  enabled: true,
+  firstDelayMs: 3500,
+  showMs: 6000,
+  gapMs: 18000,
+  // Data di bawah adalah CONTOH agar notifikasi terlihat berjalan.
+  // GANTI dengan data pembelian yang benar-benar terjadi sebelum halaman dipublikasikan.
+  data: [
+    { nama:"Bunda R.", kota:"Surabaya",    waktu:"Baru saja" },
+    { nama:"Bunda D.", kota:"Bandung",     waktu:"12 menit lalu" },
+    { nama:"Bunda S.", kota:"Jakarta",     waktu:"37 menit lalu" },
+    { nama:"Bunda A.", kota:"Tulungagung", waktu:"1 jam lalu" },
+    { nama:"Bunda N.", kota:"Makassar",    waktu:"2 jam lalu" },
+    { nama:"Bunda F.", kota:"Medan",       waktu:"3 jam lalu" },
+  ]
+};
+
+/* ---------- KUOTA GELOMBANG 2 ----------
+Perbarui angka terjual di sini setiap ada penjualan baru,
+agar angka di halaman selalu sesuai data nyata. */
+const WAVE2 = { kuota: 100, terjual: 89 };
+
+// ---------- Countdown ----------
+(function(){
+  const boxes = document.querySelectorAll('[data-cd]');
+  const minis = document.querySelectorAll('[data-cd-mini]');
+  const bar   = document.getElementById('promoBar');
+  const stickyCd = document.querySelector('.sticky-cd');
+  if (!boxes.length && !minis.length) return;
+
+  function promoBerakhir(){
+    if (!PROMO.promoAktif) return true;
+    if (!PROMO.tanggalAkhir) return false;
+    const bagian = PROMO.tanggalAkhir.split('-');
+    if (bagian.length !== 3) return false;
+    const batas = new Date(+bagian[0], +bagian[1] - 1, +bagian[2] + 1, 0, 0, 0, 0);
+    return Date.now() >= batas.getTime();
+  }
+
+  function tampilkanHargaNaik(){
+    document.querySelectorAll('.cd-lbl').forEach(el => {
+      el.textContent = '⏰ Waktu harga ' + HARGA.sekarang + ' telah habis';
+    });
+    document.querySelectorAll('.cd-note').forEach(el => {
+      el.innerHTML = 'Hitung mundur selesai. Silakan cek harga terbaru di halaman checkout — harga berikutnya <b>' + HARGA.berikutnya + '</b>.';
+    });
+  }
+
+  function sembunyikanPromo(){
+    if (bar) bar.style.display = 'none';
+    if (stickyCd) stickyCd.style.display = 'none';
+    boxes.forEach(b => { const w = b.closest('.cd-box'); if (w) w.style.display = 'none'; });
+    minis.forEach(m => { const w = m.closest('.mini-urgent'); if (w) w.style.display = 'none'; });
+  }
+
+  const KUNCI = 'ca_promo_deadline';
+  const DURASI_MS = (PROMO.durasiJam || 3) * 60 * 60 * 1000;
+  let batasMemori = null;
+
+  function ambilBatas(){
+    if (PROMO.mode === 'deadline' && PROMO.deadline) {
+      const t = new Date(PROMO.deadline).getTime();
+      if (!isNaN(t)) return t;
+    }
+    const sekarang = Date.now();
+    try {
+      const tersimpan = parseInt(localStorage.getItem(KUNCI), 10);
+      if (tersimpan && tersimpan > sekarang && tersimpan - sekarang <= DURASI_MS) return tersimpan;
+      if (tersimpan && tersimpan <= sekarang) return tersimpan;
+      const baru = sekarang + DURASI_MS;
+      localStorage.setItem(KUNCI, String(baru));
+      return baru;
+    } catch (e) {
+      if (!batasMemori) batasMemori = sekarang + DURASI_MS;
+      return batasMemori;
+    }
+  }
+
+  function sisaMs(){
+    return ambilBatas() - Date.now();
+  }
+
+  const pad = n => String(n).padStart(2, '0');
+  let timer = null;
+
+  function tick(){
+    if (promoBerakhir()) { sembunyikanPromo(); return; }
+    let ms = sisaMs();
+    if (ms <= 0) { ms = 0; tampilkanHargaNaik(); }
+    const total = Math.floor(ms / 1000);
+    const h = pad(Math.floor(total / 3600));
+    const m = pad(Math.floor((total % 3600) / 60));
+    const s = pad(total % 60);
+
+    boxes.forEach(box => {
+      const eh = box.querySelector('[data-h]');
+      const em = box.querySelector('[data-m]');
+      const es = box.querySelector('[data-s]');
+      if (eh) eh.textContent = h;
+      if (em) em.textContent = m;
+      if (es) es.textContent = s;
+    });
+    minis.forEach(el => { el.textContent = h + ':' + m + ':' + s; });
+
+    if (ms <= 0) return;
+    clearTimeout(timer);
+    timer = setTimeout(tick, 1000 - (Date.now() % 1000));
+  }
+
+  if (promoBerakhir()) { sembunyikanPromo(); return; }
+  tick();
+  document.addEventListener('visibilitychange', () => { if (!document.hidden) tick(); });
+})();
+
+document.querySelectorAll('.js-cta').forEach(a => { a.href = CHECKOUT_URL; });
+
+// Render kuota gelombang 2
+(function(){
+  const bar = document.getElementById('w2bar');
+  if (!bar) return;
+  const sisa = Math.max(0, WAVE2.kuota - WAVE2.terjual);
+  const pct = Math.min(100, Math.round(WAVE2.terjual / WAVE2.kuota * 100));
+  document.getElementById('w2quota').textContent = WAVE2.kuota;
+  document.getElementById('w2sold').textContent = WAVE2.terjual;
+  document.getElementById('w2left').textContent = sisa;
+  document.getElementById('w2note').textContent = sisa > 0
+    ? '⚡ Kuota hampir habis — sisa ' + sisa + ' slot lagi!'
+    : '❌ Kuota promo telah habis — harga berikutnya ' + HARGA.berikutnya + '.';
+  const prog = bar.parentElement;
+  prog.setAttribute('aria-valuenow', pct);
+
+  document.querySelectorAll('[data-quota]').forEach(el => { el.textContent = WAVE2.kuota; });
+  document.querySelectorAll('[data-sold]').forEach(el => { el.textContent = WAVE2.terjual; });
+  document.querySelectorAll('[data-left]').forEach(el => { el.textContent = sisa; });
+
+  const semuaBar = [bar].concat(Array.from(document.querySelectorAll('[data-bar]')));
+  requestAnimationFrame(() => { setTimeout(() => {
+    semuaBar.forEach(b => { b.style.width = pct + '%'; });
+  }, 300); });
+})();
+document.querySelectorAll('.js-wa').forEach(a => { a.href = WHATSAPP_URL; });
+
+// Mobile nav
+const toggle = document.getElementById('navToggle');
+const links = document.getElementById('navLinks');
+toggle.addEventListener('click', () => {
+  const open = links.classList.toggle('open');
+  toggle.setAttribute('aria-expanded', open);
+});
+links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => links.classList.remove('open')));
+
+// Reveal on scroll
+if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches && 'IntersectionObserver' in window) {
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+} else {
+  document.querySelectorAll('.reveal').forEach(el => el.classList.add('in'));
+}
+
+// ---------- Notifikasi penjualan ----------
+(function(){
+  if (!SALES_NOTIF.enabled || !SALES_NOTIF.data.length) return;
+  const toast = document.createElement('div');
+  toast.className = 'sale-toast';
+  toast.setAttribute('role','status');
+  toast.innerHTML = '<span class="ic">🛒</span><span><b></b><span class="msg"></span><span class="when"></span></span><button class="x" aria-label="Tutup">✕</button>';
+  document.body.appendChild(toast);
+  let stopped = false;
+  toast.querySelector('.x').addEventListener('click', () => { stopped = true; toast.classList.remove('show'); });
+  let i = 0;
+  function show(){
+    if (stopped) return;
+    const d = SALES_NOTIF.data[i % SALES_NOTIF.data.length]; i++;
+    toast.querySelector('b').textContent = d.nama + ' — ' + d.kota;
+    toast.querySelector('.msg').textContent = 'mengambil Paket Coding Anak — harga promo Rp249.000';
+    toast.querySelector('.when').textContent = d.waktu || '';
+    toast.classList.add('show');
+    setTimeout(() => toast.classList.remove('show'), SALES_NOTIF.showMs);
+    setTimeout(show, SALES_NOTIF.showMs + SALES_NOTIF.gapMs);
+  }
+  setTimeout(show, SALES_NOTIF.firstDelayMs);
+})();
+
+</script>
+</body>
+</html>

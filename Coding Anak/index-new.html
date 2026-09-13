@@ -1,0 +1,1245 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Coding Anak - Program Coding Terbaik untuk Anak Indonesia 🧩</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --primary:#FF6B35;
+    --primary-light:#FF8555;
+    --primary-dark:#E55A24;
+    --accent-blue:#004E89;
+    --accent-green:#00B894;
+    --accent-yellow:#FFD60A;
+    --accent-pink:#FF1493;
+    --dark:#1A1A2E;
+    --dark-light:#545454;
+    --light:#F8F9FA;
+    --white:#FFFFFF;
+    --shadow:0 20px 40px rgba(0,0,0,0.08);
+    --shadow-lg:0 40px 80px rgba(0,0,0,0.12);
+  }
+
+  * { box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+  body {
+    margin:0;
+    font-family:'Nunito', sans-serif;
+    color:var(--dark);
+    background:linear-gradient(135deg, #F8F9FA 0%, #EEF4F9 100%);
+    overflow-x:hidden;
+    line-height:1.6;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family:'Baloo 2', cursive;
+    font-weight:800;
+    margin:0;
+  }
+
+  .container { max-width:1200px; margin:0 auto; padding:0 24px; }
+
+  /* ANIMATIONS */
+  @keyframes fadeIn { from{opacity:0;} to{opacity:1;} }
+  @keyframes slideUp { from{opacity:0;transform:translateY(30px);} to{opacity:1;transform:translateY(0);} }
+  @keyframes slideDown { from{opacity:0;transform:translateY(-30px);} to{opacity:1;transform:translateY(0);} }
+  @keyframes slideLeft { from{opacity:0;transform:translateX(-30px);} to{opacity:1;transform:translateX(0);} }
+  @keyframes slideRight { from{opacity:0;transform:translateX(30px);} to{opacity:1;transform:translateX(0);} }
+  @keyframes float { 0%,100%{transform:translateY(0px);} 50%{transform:translateY(-20px);} }
+  @keyframes pulse { 0%,100%{opacity:1;} 50%{opacity:0.7;} }
+  @keyframes bounce { 0%,100%{transform:translateY(0);} 50%{transform:translateY(-10px);} }
+  @keyframes scalePulse { 0%,100%{transform:scale(1);} 50%{transform:scale(1.05);} }
+  @keyframes shimmer {
+    0% { background-position:-1000px 0; }
+    100% { background-position:1000px 0; }
+  }
+
+  /* BUTTONS */
+  .btn {
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
+    font-family:'Baloo 2', cursive;
+    font-weight:700;
+    font-size:1rem;
+    padding:14px 32px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    transition:all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    position:relative;
+    overflow:hidden;
+    text-decoration:none;
+  }
+
+  .btn-primary {
+    background:linear-gradient(135deg, var(--primary), #FF5722);
+    color:var(--white);
+    box-shadow:0 12px 30px rgba(255,107,35,0.3);
+  }
+
+  .btn-primary:hover {
+    transform:translateY(-4px);
+    box-shadow:0 18px 45px rgba(255,107,35,0.45);
+  }
+
+  .btn-secondary {
+    background:var(--accent-blue);
+    color:var(--white);
+    box-shadow:0 12px 30px rgba(0,78,137,0.3);
+  }
+
+  .btn-secondary:hover {
+    transform:translateY(-4px);
+    box-shadow:0 18px 45px rgba(0,78,137,0.45);
+  }
+
+  .btn-outline {
+    background:transparent;
+    color:var(--primary);
+    border:2px solid var(--primary);
+    box-shadow:none;
+  }
+
+  .btn-outline:hover {
+    background:var(--primary);
+    color:var(--white);
+  }
+
+  .btn-lg { padding:18px 44px; font-size:1.1rem; }
+  .btn-sm { padding:10px 20px; font-size:0.9rem; }
+
+  /* NAVBAR */
+  .navbar {
+    position:sticky;
+    top:0;
+    z-index:100;
+    background:rgba(248,249,250,0.95);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid rgba(0,0,0,0.08);
+    box-shadow:0 4px 20px rgba(0,0,0,0.04);
+    animation:slideDown 0.6s ease;
+  }
+
+  .navbar .container {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:14px 24px;
+  }
+
+  .logo {
+    font-size:1.6rem;
+    color:var(--dark);
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-weight:800;
+  }
+
+  .logo span { color:var(--primary); }
+
+  .nav-menu {
+    display:flex;
+    gap:30px;
+    align-items:center;
+  }
+
+  .nav-menu a {
+    color:var(--dark-light);
+    font-weight:600;
+    text-decoration:none;
+    transition:color 0.3s;
+  }
+
+  .nav-menu a:hover { color:var(--primary); }
+
+  /* HERO */
+  .hero {
+    padding:100px 0 60px;
+    position:relative;
+    overflow:hidden;
+  }
+
+  .hero::before {
+    content:'';
+    position:absolute;
+    top:-50%;
+    right:-10%;
+    width:600px;
+    height:600px;
+    border-radius:50%;
+    background:radial-gradient(circle, rgba(255,107,35,0.15), transparent 70%);
+    filter:blur(40px);
+  }
+
+  .hero-content {
+    display:grid;
+    grid-template-columns:1.1fr 0.9fr;
+    gap:60px;
+    align-items:center;
+    position:relative;
+    z-index:1;
+  }
+
+  .hero-text h1 {
+    font-size:3.5rem;
+    line-height:1.2;
+    margin-bottom:20px;
+    animation:slideUp 0.8s ease 0.1s both;
+  }
+
+  .hero-text h1 .highlight {
+    background:linear-gradient(135deg, var(--primary), var(--accent-pink));
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    background-clip:text;
+  }
+
+  .hero-text p {
+    font-size:1.15rem;
+    color:var(--dark-light);
+    margin-bottom:30px;
+    line-height:1.8;
+    animation:slideUp 0.8s ease 0.2s both;
+  }
+
+  .hero-cta {
+    display:flex;
+    gap:16px;
+    flex-wrap:wrap;
+    margin-bottom:40px;
+    animation:slideUp 0.8s ease 0.3s both;
+  }
+
+  .social-proof {
+    display:flex;
+    gap:30px;
+    flex-wrap:wrap;
+    animation:slideUp 0.8s ease 0.4s both;
+  }
+
+  .proof-item {
+    display:flex;
+    align-items:center;
+    gap:8px;
+    font-weight:600;
+    color:var(--dark-light);
+  }
+
+  .proof-item .icon {
+    font-size:1.4rem;
+  }
+
+  .hero-visual {
+    position:relative;
+    animation:float 6s ease-in-out infinite;
+  }
+
+  .cards-stack {
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:16px;
+    perspective:1000px;
+  }
+
+  .card-item {
+    background:linear-gradient(135deg, var(--white) 0%, rgba(255,255,255,0.8) 100%);
+    border-radius:16px;
+    padding:24px;
+    box-shadow:0 20px 40px rgba(0,0,0,0.1);
+    backdrop-filter:blur(10px);
+    border:1px solid rgba(255,255,255,0.8);
+    transform:perspective(1000px) rotateY(-5deg) rotateX(2deg);
+    transition:all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+    animation:slideLeft 0.8s ease 0.2s both;
+  }
+
+  .card-item:hover {
+    transform:perspective(1000px) rotateY(0deg) rotateX(0deg) translateY(-10px);
+    box-shadow:0 30px 60px rgba(0,0,0,0.15);
+  }
+
+  .card-item h3 {
+    font-size:1.3rem;
+    margin-bottom:12px;
+    color:var(--dark);
+  }
+
+  .card-item p {
+    color:var(--dark-light);
+    font-size:0.95rem;
+  }
+
+  .level-badge {
+    display:inline-block;
+    background:linear-gradient(135deg, var(--primary), #FF5722);
+    color:var(--white);
+    padding:8px 16px;
+    border-radius:8px;
+    font-weight:700;
+    font-size:0.9rem;
+    margin-bottom:12px;
+  }
+
+  /* PRICING SECTION */
+  .pricing-section {
+    padding:80px 0;
+    position:relative;
+  }
+
+  .section-head {
+    text-align:center;
+    max-width:700px;
+    margin:0 auto 60px;
+    animation:slideUp 0.8s ease;
+  }
+
+  .section-head h2 {
+    font-size:2.8rem;
+    margin-bottom:20px;
+    color:var(--dark);
+    line-height:1.3;
+  }
+
+  .section-head p {
+    font-size:1.1rem;
+    color:var(--dark-light);
+    line-height:1.8;
+  }
+
+  .pricing-grid {
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap:24px;
+    perspective:1000px;
+  }
+
+  .pricing-card {
+    background:linear-gradient(135deg, var(--white) 0%, rgba(255,255,255,0.9) 100%);
+    border-radius:20px;
+    padding:32px 24px;
+    box-shadow:0 12px 36px rgba(0,0,0,0.08);
+    border:2px solid rgba(255,107,35,0.1);
+    position:relative;
+    transition:all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+    animation:slideUp 0.8s ease backwards;
+  }
+
+  .pricing-card:nth-child(1) { animation-delay:0.1s; }
+  .pricing-card:nth-child(2) { animation-delay:0.2s; }
+  .pricing-card:nth-child(3) { animation-delay:0.3s; }
+  .pricing-card:nth-child(4) { animation-delay:0.4s; }
+
+  .pricing-card:hover {
+    transform:translateY(-15px);
+    box-shadow:0 30px 60px rgba(255,107,35,0.2);
+    border-color:var(--primary);
+  }
+
+  .pricing-card.featured {
+    transform:scale(1.05);
+    border-color:var(--primary);
+    box-shadow:0 30px 60px rgba(255,107,35,0.25);
+    background:linear-gradient(135deg, var(--primary), #FF5722);
+    color:var(--white);
+  }
+
+  .pricing-card.featured:hover {
+    transform:scale(1.05) translateY(-15px);
+  }
+
+  .ribbon {
+    position:absolute;
+    top:-12px;
+    left:50%;
+    transform:translateX(-50%);
+    background:linear-gradient(135deg, var(--accent-yellow), #FFD700);
+    color:var(--dark);
+    padding:6px 20px;
+    border-radius:20px;
+    font-weight:800;
+    font-size:0.85rem;
+    box-shadow:0 8px 20px rgba(255,201,60,0.4);
+    z-index:2;
+  }
+
+  .pricing-card.featured .ribbon {
+    background:var(--accent-yellow);
+  }
+
+  .tier-name {
+    font-size:1.3rem;
+    font-weight:800;
+    margin-bottom:16px;
+    color:var(--dark);
+  }
+
+  .pricing-card.featured .tier-name {
+    color:var(--white);
+  }
+
+  .price-display {
+    margin-bottom:24px;
+    border-bottom:2px solid rgba(0,0,0,0.1);
+    padding-bottom:24px;
+  }
+
+  .pricing-card.featured .price-display {
+    border-color:rgba(255,255,255,0.2);
+  }
+
+  .price {
+    font-size:2.5rem;
+    font-family:'Baloo 2', cursive;
+    font-weight:800;
+    margin-bottom:8px;
+    color:var(--primary);
+  }
+
+  .pricing-card.featured .price {
+    color:var(--white);
+  }
+
+  .price-old {
+    text-decoration:line-through;
+    color:var(--dark-light);
+    font-size:0.9rem;
+  }
+
+  .pricing-card.featured .price-old {
+    color:rgba(255,255,255,0.7);
+  }
+
+  .features-list {
+    list-style:none;
+    padding:0;
+    margin-bottom:24px;
+  }
+
+  .features-list li {
+    padding:10px 0;
+    font-size:0.95rem;
+    color:var(--dark-light);
+    border-bottom:1px solid rgba(0,0,0,0.05);
+    display:flex;
+    align-items:center;
+    gap:10px;
+  }
+
+  .pricing-card.featured .features-list li {
+    color:rgba(255,255,255,0.9);
+    border-color:rgba(255,255,255,0.1);
+  }
+
+  .features-list li::before {
+    content:'✓';
+    color:var(--accent-green);
+    font-weight:900;
+    font-size:1.2rem;
+  }
+
+  .pricing-card.featured .features-list li::before {
+    color:var(--accent-yellow);
+  }
+
+  .features-list li.unavailable {
+    opacity:0.5;
+  }
+
+  .features-list li.unavailable::before {
+    content:'✕';
+    color:#999;
+  }
+
+  .pricing-btn {
+    width:100%;
+    justify-content:center;
+  }
+
+  /* COMPARISON */
+  .comparison-table {
+    margin-top:60px;
+    overflow-x:auto;
+    animation:slideUp 0.8s ease 0.5s both;
+  }
+
+  table {
+    width:100%;
+    border-collapse:collapse;
+    background:var(--white);
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 12px 36px rgba(0,0,0,0.08);
+  }
+
+  th, td {
+    padding:16px;
+    text-align:left;
+    font-size:0.95rem;
+  }
+
+  th {
+    background:linear-gradient(135deg, var(--primary), #FF5722);
+    color:var(--white);
+    font-weight:700;
+  }
+
+  tr:nth-child(even) {
+    background:rgba(248,249,250,0.5);
+  }
+
+  td.feature-name {
+    font-weight:600;
+    color:var(--dark);
+  }
+
+  td .check {
+    color:var(--accent-green);
+    font-weight:900;
+    font-size:1.3rem;
+  }
+
+  td .cross {
+    color:#ccc;
+  }
+
+  /* TESTIMONIAL SECTION */
+  .testimonial-section {
+    padding:80px 0;
+    background:linear-gradient(135deg, rgba(255,107,35,0.05), rgba(0,78,137,0.05));
+  }
+
+  .testimonial-grid {
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:28px;
+    margin-top:60px;
+  }
+
+  .testimonial-card {
+    background:var(--white);
+    border-radius:16px;
+    padding:32px;
+    box-shadow:0 12px 36px rgba(0,0,0,0.08);
+    border:1px solid rgba(255,107,35,0.1);
+    transition:all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+    animation:slideUp 0.8s ease backwards;
+  }
+
+  .testimonial-card:nth-child(1) { animation-delay:0.1s; }
+  .testimonial-card:nth-child(2) { animation-delay:0.2s; }
+  .testimonial-card:nth-child(3) { animation-delay:0.3s; }
+
+  .testimonial-card:hover {
+    transform:translateY(-10px);
+    box-shadow:0 24px 50px rgba(0,0,0,0.12);
+  }
+
+  .stars {
+    font-size:1.1rem;
+    color:var(--accent-yellow);
+    margin-bottom:16px;
+    letter-spacing:3px;
+  }
+
+  .testimonial-text {
+    font-size:0.95rem;
+    color:var(--dark-light);
+    margin-bottom:20px;
+    line-height:1.8;
+    font-style:italic;
+  }
+
+  .testimonial-author {
+    display:flex;
+    align-items:center;
+    gap:12px;
+  }
+
+  .avatar {
+    width:44px;
+    height:44px;
+    border-radius:50%;
+    background:linear-gradient(135deg, var(--primary), var(--accent-pink));
+    color:var(--white);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:700;
+    font-size:1.1rem;
+    box-shadow:0 8px 20px rgba(255,107,35,0.3);
+  }
+
+  .author-info strong {
+    display:block;
+    color:var(--dark);
+    font-size:0.95rem;
+  }
+
+  .author-info small {
+    color:var(--dark-light);
+    font-size:0.85rem;
+  }
+
+  /* FEATURES SECTION */
+  .features-section {
+    padding:80px 0;
+  }
+
+  .features-grid {
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:32px;
+    margin-top:60px;
+  }
+
+  .feature-box {
+    text-align:center;
+    animation:slideUp 0.8s ease backwards;
+  }
+
+  .feature-box:nth-child(1) { animation-delay:0.1s; }
+  .feature-box:nth-child(2) { animation-delay:0.2s; }
+  .feature-box:nth-child(3) { animation-delay:0.3s; }
+
+  .feature-icon {
+    font-size:3.5rem;
+    margin-bottom:20px;
+    display:block;
+  }
+
+  .feature-box h3 {
+    font-size:1.3rem;
+    margin-bottom:12px;
+    color:var(--dark);
+  }
+
+  .feature-box p {
+    color:var(--dark-light);
+    line-height:1.8;
+  }
+
+  /* CTA SECTION */
+  .cta-section {
+    padding:80px 0;
+    text-align:center;
+    background:linear-gradient(135deg, var(--primary), #FF5722);
+    border-radius:24px;
+    color:var(--white);
+    position:relative;
+    overflow:hidden;
+    margin:0 24px;
+  }
+
+  .cta-section::before {
+    content:'';
+    position:absolute;
+    top:-50%;
+    right:-10%;
+    width:600px;
+    height:600px;
+    border-radius:50%;
+    background:radial-gradient(circle, rgba(255,255,255,0.1), transparent 70%);
+    filter:blur(40px);
+  }
+
+  .cta-section h2 {
+    font-size:2.5rem;
+    margin-bottom:20px;
+    position:relative;
+    z-index:1;
+    animation:slideUp 0.8s ease;
+  }
+
+  .cta-section p {
+    font-size:1.1rem;
+    margin-bottom:30px;
+    position:relative;
+    z-index:1;
+    animation:slideUp 0.8s ease 0.1s both;
+  }
+
+  .cta-section .btn {
+    position:relative;
+    z-index:1;
+    animation:slideUp 0.8s ease 0.2s both;
+  }
+
+  /* FAQ */
+  .faq-section {
+    padding:80px 0;
+  }
+
+  .faq-grid {
+    max-width:700px;
+    margin:60px auto 0;
+  }
+
+  .faq-item {
+    background:var(--white);
+    border-radius:12px;
+    padding:24px;
+    margin-bottom:16px;
+    box-shadow:0 8px 24px rgba(0,0,0,0.08);
+    border:1px solid rgba(0,0,0,0.05);
+    transition:all 0.3s;
+    animation:slideUp 0.8s ease backwards;
+  }
+
+  .faq-item:nth-child(1) { animation-delay:0.1s; }
+  .faq-item:nth-child(2) { animation-delay:0.2s; }
+  .faq-item:nth-child(3) { animation-delay:0.3s; }
+  .faq-item:nth-child(4) { animation-delay:0.4s; }
+
+  .faq-item:hover {
+    box-shadow:0 12px 36px rgba(0,0,0,0.12);
+  }
+
+  .faq-question {
+    font-weight:700;
+    font-size:1.05rem;
+    color:var(--dark);
+    cursor:pointer;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    user-select:none;
+  }
+
+  .faq-icon {
+    font-size:1.3rem;
+    transition:transform 0.3s;
+  }
+
+  .faq-item.active .faq-icon {
+    transform:rotate(45deg);
+  }
+
+  .faq-answer {
+    color:var(--dark-light);
+    margin-top:16px;
+    line-height:1.8;
+    display:none;
+  }
+
+  .faq-item.active .faq-answer {
+    display:block;
+    animation:slideDown 0.3s ease;
+  }
+
+  /* FOOTER */
+  footer {
+    background:linear-gradient(135deg, var(--dark), #2C3E50);
+    color:rgba(255,255,255,0.8);
+    padding:60px 0 30px;
+    margin-top:100px;
+  }
+
+  footer h3 {
+    color:var(--white);
+    margin-bottom:20px;
+  }
+
+  footer p {
+    line-height:1.8;
+  }
+
+  .footer-content {
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:40px;
+    margin-bottom:40px;
+    padding-bottom:40px;
+    border-bottom:1px solid rgba(255,255,255,0.1);
+  }
+
+  .footer-copy {
+    text-align:center;
+    color:rgba(255,255,255,0.6);
+    font-size:0.9rem;
+  }
+
+  /* RESPONSIVE */
+  @media (max-width:1024px) {
+    .pricing-grid { grid-template-columns:repeat(2, 1fr); }
+    .pricing-card.featured { transform:scale(1); }
+    .testimonial-grid { grid-template-columns:repeat(2, 1fr); }
+    .features-grid { grid-template-columns:repeat(2, 1fr); }
+    .footer-content { grid-template-columns:1fr; }
+  }
+
+  @media (max-width:768px) {
+    .hero-content { grid-template-columns:1fr; }
+    .hero-text h1 { font-size:2.4rem; }
+    .section-head h2 { font-size:2rem; }
+    .pricing-grid { grid-template-columns:1fr; }
+    .testimonial-grid { grid-template-columns:1fr; }
+    .features-grid { grid-template-columns:1fr; }
+    .nav-menu { display:none; }
+    .cta-section { margin:0; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="container">
+    <div class="logo">🧩 Coding<span>Anak</span></div>
+    <div class="nav-menu">
+      <a href="#harga">Harga</a>
+      <a href="#testimoni">Testimoni</a>
+      <a href="#faq">FAQ</a>
+      <a href="#harga" class="btn btn-primary btn-sm">Mulai Sekarang</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1>Anak Cerdas Dimulai Dari <span class="highlight">Coding Unplugged</span> 🚀</h1>
+        <p>Tingkatkan logika, kreativitas, dan problem-solving anak tanpa gadget. Program komprehensif dengan 54 hari challenge, ratusan worksheet, dan bonus melimpah.</p>
+        
+        <div class="hero-cta">
+          <a href="#harga" class="btn btn-primary btn-lg">Lihat Paket Harga</a>
+          <a href="#demo" class="btn btn-outline btn-lg">Coba Gratis Demo</a>
+        </div>
+
+        <div class="social-proof">
+          <div class="proof-item">
+            <span class="icon">👨‍👩‍👧‍👦</span>
+            <span>2,500+ Keluarga Puas</span>
+          </div>
+          <div class="proof-item">
+            <span class="icon">⭐</span>
+            <span>4.9/5 Rating</span>
+          </div>
+          <div class="proof-item">
+            <span class="icon">📚</span>
+            <span>500+ Halaman Materi</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="cards-stack">
+          <div class="card-item">
+            <span class="level-badge">Level 1</span>
+            <h3>Dasar Coding</h3>
+            <p>Pengenalan konsep dasar coding unplugged untuk pemula</p>
+          </div>
+          <div class="card-item">
+            <span class="level-badge" style="background:linear-gradient(135deg, #FF1493, #FF69B4);">Level 2</span>
+            <h3>Logika Lanjut</h3>
+            <p>Tantangan logika & pemecahan masalah lebih kompleks</p>
+          </div>
+          <div class="card-item">
+            <span class="level-badge" style="background:linear-gradient(135deg, #00B894, #00D4AA);">Level 3</span>
+            <h3>Master Coding</h3>
+            <p>Program komprehensif dengan 54 hari challenge</p>
+          </div>
+          <div class="card-item">
+            <span class="level-badge" style="background:linear-gradient(135deg, #FFD60A, #FFD700);">BONUS</span>
+            <h3>Paket Lengkap+</h3>
+            <p>Semua level + dongeng bersuara + games edukatif</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="pricing-section" id="harga">
+  <div class="container">
+    <div class="section-head">
+      <h2>Pilih Paket yang Sesuai</h2>
+      <p>Semua paket sudah termasuk 54 Hari Challenge, worksheet, dan akses seumur hidup</p>
+    </div>
+
+    <div class="pricing-grid">
+      <!-- LEVEL 1 -->
+      <div class="pricing-card">
+        <div class="ribbon">STARTER</div>
+        <h3 class="tier-name">Level 1</h3>
+        <div class="price-display">
+          <div class="price">Rp 89.000</div>
+          <div class="price-old">Rp 199.000</div>
+        </div>
+        <ul class="features-list">
+          <li>Modul Level 1</li>
+          <li>Challenge 54 Hari</li>
+          <li>100 Worksheet</li>
+          <li>Akses Seumur Hidup</li>
+          <li class="unavailable">Bonus Audio Dongeng</li>
+          <li class="unavailable">Games Edukasi</li>
+        </ul>
+        <a href="[[CHECKOUT_LINK_L1]]" class="btn btn-secondary pricing-btn">Beli Sekarang</a>
+      </div>
+
+      <!-- LEVEL 2 -->
+      <div class="pricing-card">
+        <div class="ribbon">POPULER</div>
+        <h3 class="tier-name">Level 2</h3>
+        <div class="price-display">
+          <div class="price">Rp 149.000</div>
+          <div class="price-old">Rp 349.000</div>
+        </div>
+        <ul class="features-list">
+          <li>Modul Level 1 + 2</li>
+          <li>Challenge 54 Hari</li>
+          <li>250 Worksheet</li>
+          <li>Akses Seumur Hidup</li>
+          <li>Bonus Audio Dongeng</li>
+          <li class="unavailable">Games Edukasi</li>
+        </ul>
+        <a href="[[CHECKOUT_LINK_L2]]" class="btn btn-secondary pricing-btn">Beli Sekarang</a>
+      </div>
+
+      <!-- LEVEL 3 -->
+      <div class="pricing-card">
+        <div class="ribbon">TERSERAH</div>
+        <h3 class="tier-name">Level 3</h3>
+        <div class="price-display">
+          <div class="price">Rp 199.000</div>
+          <div class="price-old">Rp 499.000</div>
+        </div>
+        <ul class="features-list">
+          <li>Modul Level 1 + 2 + 3</li>
+          <li>Challenge 54 Hari</li>
+          <li>400 Worksheet</li>
+          <li>Akses Seumur Hidup</li>
+          <li>Bonus Audio Dongeng</li>
+          <li class="unavailable">Games Edukasi</li>
+        </ul>
+        <a href="[[CHECKOUT_LINK_L3]]" class="btn btn-secondary pricing-btn">Beli Sekarang</a>
+      </div>
+
+      <!-- PAKET LENGKAP + BONUS -->
+      <div class="pricing-card featured">
+        <div class="ribbon">TERBAIK! 🎁</div>
+        <h3 class="tier-name">Lengkap + Bonus</h3>
+        <div class="price-display">
+          <div class="price">Rp 249.000</div>
+          <div class="price-old">Rp 799.000</div>
+        </div>
+        <ul class="features-list">
+          <li>Semua Level 1-3</li>
+          <li>Challenge 54 Hari</li>
+          <li>500+ Worksheet</li>
+          <li>Akses Seumur Hidup</li>
+          <li>100 Dongeng Audio</li>
+          <li>8 Games Edukasi</li>
+        </ul>
+        <a href="[[CHECKOUT_LINK_FULL]]" class="btn btn-primary pricing-btn">🎉 Pesan Sekarang</a>
+      </div>
+    </div>
+
+    <!-- COMPARISON TABLE -->
+    <div class="comparison-table">
+      <table>
+        <thead>
+          <tr>
+            <th>Fitur</th>
+            <th>Level 1</th>
+            <th>Level 2</th>
+            <th>Level 3</th>
+            <th>Lengkap + Bonus</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="feature-name">Modul Level 1</td>
+            <td><span class="check">✓</span></td>
+            <td><span class="check">✓</span></td>
+            <td><span class="check">✓</span></td>
+            <td><span class="check">✓</span></td>
+          </tr>
+          <tr>
+            <td class="feature-name">Modul Level 2</td>
+            <td><span class="cross">✕</span></td>
+            <td><span class="check">✓</span></td>
+            <td><span class="check">✓</span></td>
+            <td><span class="check">✓</span></td>
+          </tr>
+          <tr>
+            <td class="feature-name">Modul Level 3</td>
+            <td><span class="cross">✕</span></td>
+            <td><span class="cross">✕</span></td>
+            <td><span class="check">✓</span></td>
+            <td><span class="check">✓</span></td>
+          </tr>
+          <tr>
+            <td class="feature-name">Challenge 54 Hari</td>
+            <td><span class="check">✓</span></td>
+            <td><span class="check">✓</span></td>
+            <td><span class="check">✓</span></td>
+            <td><span class="check">✓</span></td>
+          </tr>
+          <tr>
+            <td class="feature-name">100 Dongeng Audio</td>
+            <td><span class="cross">✕</span></td>
+            <td><span class="check">✓</span></td>
+            <td><span class="check">✓</span></td>
+            <td><span class="check">✓</span></td>
+          </tr>
+          <tr>
+            <td class="feature-name">8 Games Edukasi</td>
+            <td><span class="cross">✕</span></td>
+            <td><span class="cross">✕</span></td>
+            <td><span class="cross">✕</span></td>
+            <td><span class="check">✓</span></td>
+          </tr>
+          <tr>
+            <td class="feature-name">Akses Seumur Hidup</td>
+            <td><span class="check">✓</span></td>
+            <td><span class="check">✓</span></td>
+            <td><span class="check">✓</span></td>
+            <td><span class="check">✓</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonial-section" id="testimoni">
+  <div class="container">
+    <div class="section-head">
+      <h2>Apa Kata Orang Tua Kami</h2>
+      <p>Ribuan keluarga telah merasakan manfaatnya. Ini cerita nyata dari mereka.</p>
+    </div>
+
+    <div class="testimonial-grid">
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p class="testimonial-text">"Coding Anak benar-benar mengubah cara Rara belajar. Dia menjadi lebih fokus dan suka sekali dengan tantangan 54 harinya. Worksheet-nya rapi dan mudah diikuti!"</p>
+        <div class="testimonial-author">
+          <div class="avatar">B</div>
+          <div class="author-info">
+            <strong>Bunda Ayu</strong>
+            <small>Ibu Rara, 7 tahun</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p class="testimonial-text">"Bonusnya sangat banyak! Dongeng audionya jadi favorit Doni sebelum tidur. Satu paket bisa untuk semua kebutuhan belajar dan bermain anak."</p>
+        <div class="testimonial-author">
+          <div class="avatar">R</div>
+          <div class="author-info">
+            <strong>Bunda Rani</strong>
+            <small>Ibu Doni, 6 tahun</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p class="testimonial-text">"Challenge 54 harinya konsisten membuat Vega antusias setiap pagi. Tiap bangun langsung minta dicetak worksheet barunya. Investasi terbaik untuk tumbuh kembang anak!"</p>
+        <div class="testimonial-author">
+          <div class="avatar">D</div>
+          <div class="author-info">
+            <strong>Bunda Dewi</strong>
+            <small>Ibu Vega, 8 tahun</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="features-section">
+  <div class="container">
+    <div class="section-head">
+      <h2>Mengapa Memilih Coding Anak?</h2>
+      <p>Program terlengkap dan terstruktur untuk pengembangan logika anak usia dini</p>
+    </div>
+
+    <div class="features-grid">
+      <div class="feature-box">
+        <span class="feature-icon">📚</span>
+        <h3>500+ Halaman Materi</h3>
+        <p>Konten komprehensif dari pemula hingga master dengan tingkat kesulitan bertahap</p>
+      </div>
+
+      <div class="feature-box">
+        <span class="feature-icon">🚀</span>
+        <h3>54 Hari Challenge</h3>
+        <p>Program terstruktur membuat anak konsisten belajar setiap hari dengan target jelas</p>
+      </div>
+
+      <div class="feature-box">
+        <span class="feature-icon">🎁</span>
+        <h3>Bonus Melimpah</h3>
+        <p>Dongeng bersuara, games edukasi, puzzle, dan ratusan aktivitas seru lainnya</p>
+      </div>
+
+      <div class="feature-box">
+        <span class="feature-icon">🎯</span>
+        <h3>Tanpa Gadget</h3>
+        <p>Coding unplugged yang aman untuk mata & otak anak, berbasis kertas printable</p>
+      </div>
+
+      <div class="feature-box">
+        <span class="feature-icon">♾️</span>
+        <h3>Akses Seumur Hidup</h3>
+        <p>Sekali beli, selamanya punya akses dan bisa diprint berkali-kali sesuai kebutuhan</p>
+      </div>
+
+      <div class="feature-box">
+        <span class="feature-icon">💰</span>
+        <h3>Harga Terjangkau</h3>
+        <p>Lebih murah dari satu kali les coding, tapi kontennya jauh lebih lengkap & terstruktur</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="container">
+    <h2>Jangan Tunda Lagi! Mulai Hari Ini 🎈</h2>
+    <p>Ratusan halaman materi, bonus melimpah, dan akses seumur hidup menanti si kecil.</p>
+    <a href="#harga" class="btn btn-primary btn-lg">Pilih Paket Sekarang</a>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-section" id="faq">
+  <div class="container">
+    <div class="section-head">
+      <h2>Pertanyaan yang Sering Diajukan</h2>
+    </div>
+
+    <div class="faq-grid">
+      <div class="faq-item active">
+        <div class="faq-question">
+          <span>Apakah ini produk digital atau fisik?</span>
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-answer">
+          <p>Ini adalah produk digital berformat PDF. Setelah pembayaran berhasil, Anda bisa langsung download dan print sendiri di rumah. Bisa diprint berkali-kali tanpa batasan sesuai kebutuhan.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>Cocok untuk usia berapa?</span>
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-answer">
+          <p>Program ini dirancang untuk anak usia 4-9 tahun. Materi dibagi menjadi 3 level dengan tingkat kesulitan bertahap, jadi dapat disesuaikan dengan kemampuan anak.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>Apakah perlu perangkat khusus?</span>
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-answer">
+          <p>Tidak perlu sama sekali. Semua materi berbasis kertas (unplugged), jadi anak belajar konsep coding tanpa perlu gadget atau koneksi internet. Hanya butuh kertas, pensil, dan printer.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>Bagaimana cara download file setelah pembayaran?</span>
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-answer">
+          <p>Link download akan langsung dikirimkan melalui email atau tampil di halaman terima kasih setelah pembayaran melalui Scalev berhasil diverifikasi. Akses dapat diulang kapan saja.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-content">
+      <div>
+        <h3>Coding Anak</h3>
+        <p>Program coding terpadu untuk anak Indonesia. Tingkatkan logika, kreativitas, dan problem-solving anak sejak dini tanpa gadget.</p>
+      </div>
+      <div>
+        <h3>Produk</h3>
+        <p>✓ Level 1 - Dasar Coding<br>✓ Level 2 - Logika Lanjut<br>✓ Level 3 - Master Coding<br>✓ Paket Lengkap + Bonus</p>
+      </div>
+      <div>
+        <h3>Kontak</h3>
+        <p>Email: support@codinganak.id<br>Whatsapp: [[WHATSAPP]]<br>Jam Kerja: Senin-Jumat 09:00-17:00</p>
+      </div>
+    </div>
+
+    <div class="footer-copy">
+      <p>&copy; 2026 Coding Anak Indonesia. Semua hak dilindungi. | <a href="#" style="color:rgba(255,255,255,0.6);">Kebijakan Privasi</a> | <a href="#" style="color:rgba(255,255,255,0.6);">Syarat & Ketentuan</a></p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Smooth scroll
+  document.querySelectorAll('a[href^="#"]').forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href'));
+      if(target) target.scrollIntoView({behavior:'smooth'});
+    });
+  });
+
+  // FAQ Toggle
+  document.querySelectorAll('.faq-item .faq-question').forEach(item => {
+    item.addEventListener('click', function() {
+      const parent = this.parentElement;
+      document.querySelectorAll('.faq-item').forEach(el => {
+        if(el !== parent) el.classList.remove('active');
+      });
+      parent.classList.toggle('active');
+    });
+  });
+
+  // Intersection Observer untuk animasi scroll
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting) {
+        entry.target.style.opacity = '1';
+        entry.target.style.transform = 'translateY(0)';
+      }
+    });
+  }, {threshold:0.1});
+
+  document.querySelectorAll('.pricing-card, .testimonial-card, .feature-box, .faq-item').forEach(el => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(20px)';
+    el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+    observer.observe(el);
+  });
+
+  // Scroll effect navbar
+  window.addEventListener('scroll', function() {
+    const navbar = document.querySelector('.navbar');
+    if(window.scrollY > 0) {
+      navbar.style.boxShadow = '0 8px 32px rgba(0,0,0,0.1)';
+    } else {
+      navbar.style.boxShadow = '0 4px 20px rgba(0,0,0,0.04)';
+    }
+  });
+</script>
+
+</body>
+</html>

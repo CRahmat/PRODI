@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lembar Belajar Menulis 4–6 Tahun — Rumah Kreasi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#1E1712;
+    --ink-soft:#8A7A6B;
+    --paper:#FFF8F2;
+
+    --coral:#FF5A3C;
+    --coral-deep:#E64526;
+    --sun:#FFB020;
+    --sky:#3FB6D3;
+
+    --glass:rgba(255,255,255,0.6);
+    --glass-strong:rgba(255,255,255,0.85);
+    --glass-border:rgba(255,255,255,0.7);
+    --glass-shadow:0 8px 32px rgba(230,69,38,0.08);
+
+    --radius-lg:28px;
+    --radius-md:18px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0; background:var(--paper); color:var(--ink);
+    font-family:'Inter',sans-serif; -webkit-font-smoothing:antialiased;
+    overflow-x:hidden; padding-bottom:90px;
+  }
+  h1,h2,h3{font-family:'Fraunces',serif; margin:0; letter-spacing:-0.01em;}
+  p{margin:0;}
+  a{text-decoration:none; color:inherit;}
+  .wrap{max-width:760px; margin:0 auto; padding:0 22px;}
+
+  .blobs{position:fixed; inset:0; z-index:-1; overflow:hidden;}
+  .blob{position:absolute; border-radius:50%; filter:blur(70px); opacity:0.35;}
+  .blob-1{width:420px;height:420px; background:var(--coral); top:-120px; left:-100px; animation:float1 20s ease-in-out infinite;}
+  .blob-2{width:400px;height:400px; background:var(--sun); top:10%; right:-140px; animation:float2 24s ease-in-out infinite;}
+  .blob-3{width:380px;height:380px; background:var(--sky); bottom:-140px; left:10%; animation:float3 22s ease-in-out infinite;}
+  @keyframes float1{0%,100%{transform:translate(0,0) scale(1);} 50%{transform:translate(50px,60px) scale(1.08);}}
+  @keyframes float2{0%,100%{transform:translate(0,0) scale(1);} 50%{transform:translate(-60px,40px) scale(0.95);}}
+  @keyframes float3{0%,100%{transform:translate(0,0) scale(1);} 50%{transform:translate(40px,-50px) scale(1.05);}}
+  @media (prefers-reduced-motion:reduce){ .blob{animation:none !important;} }
+
+  nav{position:sticky; top:0; z-index:50; padding:14px 0;}
+  .nav-inner{
+    display:flex; align-items:center; justify-content:space-between;
+    background:var(--glass-strong); backdrop-filter:blur(18px); -webkit-backdrop-filter:blur(18px);
+    border:1px solid var(--glass-border); border-radius:999px; padding:10px 16px;
+    box-shadow:var(--glass-shadow); max-width:760px; margin:0 auto;
+  }
+  .back{display:flex; align-items:center; gap:6px; font-weight:600; font-size:13.5px;}
+  .nav-cat{font-size:12px; font-weight:700; color:var(--coral-deep); background:#FFE6DE; padding:6px 14px; border-radius:999px;}
+
+  .reveal{opacity:0; transform:translateY(20px); transition:opacity .6s ease, transform .6s ease;}
+  .reveal.in-view{opacity:1; transform:translateY(0);}
+
+  .hero{padding:34px 0 10px;}
+  .hero-card{
+    background:var(--glass-strong); backdrop-filter:blur(18px); -webkit-backdrop-filter:blur(18px);
+    border:1px solid var(--glass-border); border-radius:var(--radius-lg);
+    padding:34px 26px; text-align:center; box-shadow:var(--glass-shadow);
+  }
+  .product-thumb{
+    width:110px;height:110px; margin:0 auto 20px; border-radius:26px;
+    background:linear-gradient(135deg,#FFDCCF,#FFB199);
+    display:flex; align-items:center; justify-content:center; font-size:46px;
+  }
+  .badge-row{display:flex; justify-content:center; gap:8px; margin-bottom:14px;}
+  .badge{font-size:11.5px; font-weight:700; padding:5px 12px; border-radius:999px;}
+  .badge.best{background:var(--sun); color:#4A3300;}
+  .badge.rating{background:#FFE6DE; color:var(--coral-deep);}
+  .hero-card h1{font-size:clamp(24px,4vw,32px); font-weight:600; margin-bottom:10px;}
+  .hero-card .desc{color:var(--ink-soft); font-size:14.5px; line-height:1.6; max-width:480px; margin:0 auto 22px;}
+  .price-row{display:flex; align-items:baseline; justify-content:center; gap:10px; margin-bottom:22px;}
+  .price-now{font-family:'Fraunces',serif; font-weight:700; font-size:30px;}
+  .price-old{font-size:15px; color:var(--ink-soft); text-decoration:line-through;}
+  .btn{
+    padding:15px 28px; border-radius:999px; font-weight:600; font-size:15px;
+    display:inline-flex; align-items:center; gap:8px;
+    transition:transform .18s ease;
+  }
+  .btn:hover{transform:translateY(-2px);}
+  .btn-coral{background:var(--coral); color:#fff; box-shadow:0 10px 24px rgba(255,90,60,0.3);}
+
+  .section{padding:38px 0;}
+  .section h2{font-size:20px; font-weight:600; margin-bottom:16px;}
+
+  .include-list{display:flex; flex-direction:column; gap:10px;}
+  .include-item{
+    display:flex; align-items:center; gap:12px;
+    background:var(--glass-strong); backdrop-filter:blur(14px); -webkit-backdrop-filter:blur(14px);
+    border:1px solid var(--glass-border); border-radius:14px; padding:13px 16px;
+  }
+  .check{width:22px;height:22px;border-radius:50%; background:var(--coral); color:#fff; font-size:12px; display:flex; align-items:center; justify-content:center; flex-shrink:0;}
+  .include-item span.txt{font-size:14px;}
+
+  .gallery{display:grid; grid-template-columns:repeat(3,1fr); gap:10px;}
+  .gallery .tile{
+    aspect-ratio:1/1; border-radius:16px; display:flex; align-items:center; justify-content:center; font-size:28px;
+  }
+  .gallery .tile:nth-child(1){background:linear-gradient(135deg,#FFDCCF,#FFB199);}
+  .gallery .tile:nth-child(2){background:linear-gradient(135deg,#FFF0C2,#FFD98A);}
+  .gallery .tile:nth-child(3){background:linear-gradient(135deg,#D6F3FA,#9FE0EE);}
+
+  .quote{
+    background:var(--glass-strong); backdrop-filter:blur(14px); -webkit-backdrop-filter:blur(14px);
+    border:1px solid var(--glass-border); border-radius:var(--radius-md); padding:20px;
+  }
+  .quote p.text{font-size:14px; line-height:1.6; margin-bottom:12px;}
+  .quote .who{display:flex; align-items:center; gap:9px;}
+  .quote .who-avatar{width:28px;height:28px;border-radius:50%; background:linear-gradient(135deg,var(--coral),var(--sun));}
+  .quote .who-name{font-size:12.5px; font-weight:600;}
+  .quote .who-role{font-size:11.5px; color:var(--ink-soft);}
+
+  .faq-item{border-bottom:1px solid rgba(30,23,18,0.1); padding:14px 0;}
+  .faq-q{display:flex; align-items:center; justify-content:space-between; cursor:pointer; font-weight:600; font-size:14.5px;}
+  .faq-q .icon{font-size:16px; color:var(--ink-soft); transition:transform .2s ease;}
+  .faq-item.open .faq-q .icon{transform:rotate(45deg);}
+  .faq-a{max-height:0; overflow:hidden; transition:max-height .25s ease; color:var(--ink-soft); font-size:13px; line-height:1.6;}
+  .faq-item.open .faq-a{max-height:200px; padding-top:8px;}
+
+  .related{display:grid; grid-template-columns:repeat(2,1fr); gap:12px;}
+  @media(min-width:600px){ .related{grid-template-columns:repeat(4,1fr);} }
+  .rcard{
+    background:var(--glass-strong); backdrop-filter:blur(14px); -webkit-backdrop-filter:blur(14px);
+    border:1px solid var(--glass-border); border-radius:14px; padding:12px; text-align:left;
+  }
+  .rcard .thumb{width:100%; aspect-ratio:1/1; border-radius:10px; background:linear-gradient(135deg,#FFDCCF,#FFB199); display:flex; align-items:center; justify-content:center; font-size:22px; margin-bottom:8px;}
+  .rcard .t{font-size:12.5px; font-weight:600; line-height:1.3;}
+  .rcard .p{font-family:'Fraunces',serif; font-weight:600; font-size:13px; margin-top:4px;}
+
+  .sticky-bar{
+    position:fixed; bottom:0; left:0; right:0; z-index:60;
+    padding:14px 18px; display:flex; align-items:center; justify-content:space-between; gap:14px;
+    background:var(--glass-strong); backdrop-filter:blur(18px); -webkit-backdrop-filter:blur(18px);
+    border-top:1px solid var(--glass-border);
+  }
+  .sticky-bar .sp{display:flex; flex-direction:column;}
+  .sticky-bar .sp b{font-family:'Fraunces',serif; font-size:18px;}
+  .sticky-bar .sp span{font-size:11px; color:var(--ink-soft);}
+  .sticky-bar .btn{white-space:nowrap;}
+
+  footer{text-align:center; padding:20px 0 10px; color:var(--ink-soft); font-size:12px;}
+</style>
+</head>
+<body>
+
+<div class="blobs">
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
+</div>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="back">← Kembali</a>
+    <span class="nav-cat">🧸 Untuk Si Kecil</span>
+  </div>
+</nav>
+
+<section class="wrap hero reveal">
+  <div class="hero-card">
+    <div class="product-thumb">✏️</div>
+    <div class="badge-row">
+      <span class="badge best">Terlaris</span>
+      <span class="badge rating">⭐ 4.9 (312 ulasan)</span>
+    </div>
+    <h1>Lembar Belajar Menulis untuk Usia 4–6 Tahun</h1>
+    <p class="desc">40 halaman aktivitas menulis huruf & angka yang dirancang biar anak semangat belajar, bukan dipaksa duduk diam. Tinggal cetak dari rumah, langsung dipakai.</p>
+    <div class="price-row">
+      <span class="price-now">Rp25.000</span>
+      <span class="price-old">Rp40.000</span>
+    </div>
+    <a href="#" class="btn btn-coral">Beli Sekarang</a>
+  </div>
+</section>
+
+<section class="wrap section reveal">
+  <h2>Apa yang kamu dapat</h2>
+  <div class="include-list">
+    <div class="include-item"><span class="check">✓</span><span class="txt">40 halaman PDF siap cetak ukuran A4</span></div>
+    <div class="include-item"><span class="check">✓</span><span class="txt">Latihan menulis huruf A–Z dan angka 1–20</span></div>
+    <div class="include-item"><span class="check">✓</span><span class="txt">Desain warna-warni yang ramah untuk anak</span></div>
+    <div class="include-item"><span class="check">✓</span><span class="txt">Bisa diunduh ulang kapan saja lewat Lynk.id</span></div>
+  </div>
+</section>
+
+<section class="wrap section reveal">
+  <h2>Contoh isi halaman</h2>
+  <div class="gallery">
+    <div class="tile">✏️</div>
+    <div class="tile">🔢</div>
+    <div class="tile">🐣</div>
+  </div>
+</section>
+
+<section class="wrap section reveal">
+  <h2>Kata orang tua lain</h2>
+  <div class="quote">
+    <p class="text">Anak saya biasanya susah diajak belajar nulis, tapi lembar aktivitasnya lucu jadi dia mau sendiri tiap sore.</p>
+    <div class="who"><span class="who-avatar"></span><div><p class="who-name">Bunda Rina</p><p class="who-role">Ibu 2 anak, Bekasi</p></div></div>
+  </div>
+</section>
+
+<section class="wrap section reveal">
+  <h2>Pertanyaan yang sering ditanya</h2>
+  <div class="faq-item">
+    <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Cocok untuk anak yang belum bisa pegang pensil dengan benar?<span class="icon">+</span></div>
+    <div class="faq-a">Cocok. Halaman awal dimulai dari garis putus-putus sederhana sebelum masuk ke huruf penuh, jadi anak dilatih bertahap.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Perlu printer warna?<span class="icon">+</span></div>
+    <div class="faq-a">Tidak wajib. File tetap jelas dicetak hitam-putih, tapi lebih menarik untuk anak kalau dicetak warna.</div>
+  </div>
+</section>
+
+<section class="wrap section reveal">
+  <h2>Produk lain untuk si kecil</h2>
+  <div class="related">
+    <a href="#" class="rcard"><div class="thumb">🎨</div><p class="t">Paket Mewarnai Hewan & Alam</p><p class="p">Rp20rb</p></a>
+    <a href="#" class="rcard"><div class="thumb">🧩</div><p class="t">Kartu Kuis Berhitung TK & SD</p><p class="p">Rp22rb</p></a>
+    <a href="#" class="rcard"><div class="thumb">📖</div><p class="t">E-book Dongeng Sebelum Tidur</p><p class="p">Rp18rb</p></a>
+  </div>
+</section>
+
+<footer>© 2026 Rumah Kreasi</footer>
+
+<div class="sticky-bar">
+  <div class="sp"><b>Rp25.000</b><span>Sekali bayar</span></div>
+  <a href="#" class="btn btn-coral">Beli Sekarang</a>
+</div>
+
+<script>
+  const observer = new IntersectionObserver((entries)=>{
+    entries.forEach(entry=>{
+      if(entry.isIntersecting){ entry.target.classList.add('in-view'); observer.unobserve(entry.target); }
+    });
+  }, {threshold:0.12});
+  document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+</script>
+</body>
+</html>
